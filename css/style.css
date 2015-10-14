@@ -53,3 +53,12 @@ body
 	border-bottom-left-radius:12px;
 	border-bottom-right-radius:12px;
 }
+
+#link
+{
+	border:1px solid RGBA(138, 192, 7, 1);
+	padding:6px;
+	border-bottom-left-radius:12px;
+	border-bottom-right-radius:12px;
+	text-align:center;
+}

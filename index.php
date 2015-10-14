@@ -6,13 +6,20 @@
  <head>	
 	<title>inlogregistratie - tutorialsite</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<!--<link rel="stylesheet" media="(max-width:800px)" type="text/css" href="css/style-mobile.css">-->
+	<link rel="stylesheet" media="(max-width:800px; )" type="text/css" href="css/style-mobile.css">
  </head>
  <body>
 	<div id="container">
 		<div id="banner">
 			Banner
 		</div>
+		
+		<!--Maak hier een div voor de hyperlinks. Geef het divje een id="link"-->
+		<div id="link">
+			<a href="homepage.php">home</a>
+			<a href="test.php">test</a>
+		</div>
+		
 		<div id="content">
 			Dit is wat content. Dit is wat content. Dit is wat content. Dit is wat content. Dit is wat content. Dit is wat content. Dit is wat content. Dit is wat content. Dit is wat content. Dit is wat content. Dit is wat content. Dit is wat content. Dit is wat content. Dit is wat content. Dit is wat content. Dit is wat content. Dit is wat content. Dit is wat content. Dit is wat content. Dit is wat content. Dit is wat content. Dit is wat content. Dit is wat content. Dit is wat content. Dit is wat content. Dit is wat content. Dit is wat content. Dit is wat content. Dit is wat content. Dit is wat content. 
 		</div>
