@@ -16,12 +16,14 @@
 		
 		<!--Maak hier een div voor de hyperlinks. Geef het divje een id="link"-->
 		<div id="link">
-			<a href="homepage.php">home</a>
-			<a href="test.php">test</a>
+			<a href="index.php?content=homepage">home</a>
+			<a href="index.php?content=test">test</a>
 		</div>
 		
 		<div id="content">
-			Dit is wat content. Dit is wat content. Dit is wat content. Dit is wat content. Dit is wat content. Dit is wat content. Dit is wat content. Dit is wat content. Dit is wat content. Dit is wat content. Dit is wat content. Dit is wat content. Dit is wat content. Dit is wat content. Dit is wat content. Dit is wat content. Dit is wat content. Dit is wat content. Dit is wat content. Dit is wat content. Dit is wat content. Dit is wat content. Dit is wat content. Dit is wat content. Dit is wat content. Dit is wat content. Dit is wat content. Dit is wat content. Dit is wat content. Dit is wat content. 
+			<?php
+				$page = $_GET["content"];
+				include($page.".php"); ?>
 		</div>
 		<div id="footer" >
 			footer
