@@ -62,3 +62,10 @@ body
 	border-bottom-right-radius:12px;
 	text-align:center;
 }
+
+#register
+{
+	border:2px solid yellow;
+	width:290px;
+	margin:0px auto;
+}
