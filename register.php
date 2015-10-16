@@ -19,7 +19,7 @@
 								   
 	$result = mysqli_query($conn, $query);
 	
-	if ($result)
+	if ($result) 
 	{
 		echo "gelukt";
 	}
@@ -28,4 +28,5 @@
 		echo "mislukt";
 	}
 	
-	
+	// Huiswerk dit formulier werkend maken tot en met het wegschrijven naar de database en 
+	// het redirecten naar een andere pagina + succes/faal melding.
