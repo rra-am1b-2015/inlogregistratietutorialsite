@@ -8,24 +8,17 @@
  <body>
 	<div id="container">
 		<div id="banner">
-			Banner
-		</div>
-		
-		<!--Maak hier een div voor de hyperlinks. Geef het divje een id="link"-->
+			<?php include("banner.php"); ?>
+		</div>	
 		<div id="link">
 			<?php include("link.php"); ?>
 		</div>
 		
 		<div id="content">
-			<?php
-				if ( isset($_GET["content"]))
-				include($_GET["content"].".php");
-				else
-				include("homepage.php");
-			?>
+			<?php include("redirect.php"); ?>
 		</div>
 		<div id="footer" >
-			footer
+			<?php include("footer.php"); ?>
 		</div>
 	</div>
  </body>
