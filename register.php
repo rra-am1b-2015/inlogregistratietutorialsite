@@ -13,18 +13,22 @@
 								   `email`) 
 			  VALUES 			  (NULL,
 								   '".$_POST["firstname"]."',
-								   'de',
-								   'Ruijter',
-								   'adruijter@gmail.com');";
+								   '".$_POST["infix"]."',
+								   '".$_POST["lastname"]."',
+								   '".$_POST["email"]."');";
 								   
 	$result = mysqli_query($conn, $query);
 	
+	var_dump($result);
+	
 	if ($result) 
 	{
+		// Geef feedback aan de gebruiker dat de registratie is gelukt. Stuur de gebruiker door naar de hompage.
 		echo "gelukt";
 	}
 	else
 	{
+		// Geef de gebruiker de aanwijzing om een mail te sturen naar info@inlogregistratietutorialsite.nl en verwijs door naar de homepage.
 		echo "mislukt";
 	}
 	
