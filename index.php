@@ -1,6 +1,3 @@
-<?php
-	
-?>
 <!DOCTYPE html>
 <html>
  <head>	
@@ -16,10 +13,7 @@
 		
 		<!--Maak hier een div voor de hyperlinks. Geef het divje een id="link"-->
 		<div id="link">
-			<a href="index.php?content=homepage">home</a>
-			<a href="index.php?content=register_form">registreer</a>
-			<a href="index.php?content=test2">test2</a>
-			<a href="index.php?content=test3">test3</a>
+			<?php include("link.php"); ?>
 		</div>
 		
 		<div id="content">
