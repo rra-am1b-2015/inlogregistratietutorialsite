@@ -1,8 +1,8 @@
 <?php
-	var_dump($_POST);
+	//var_dump($_POST);
 	
 	//Maak contact met de mysql-server
-	require("db_connect.php");
+	include("db_connect.php");
 	
 	// Definieer je insert-query
 	
@@ -19,18 +19,21 @@
 								   
 	$result = mysqli_query($conn, $query);
 	
-	var_dump($result);
+	//var_dump($result);
 	
 	if ($result) 
 	{
-		// Geef feedback aan de gebruiker dat de registratie is gelukt. Stuur de gebruiker door naar de hompage.
-		echo "gelukt";
+		echo "Uw gegevens zijn correct ontvangen. U ontvangt op het aangegeven e-mailadres een bevestiging van uw registratie met een activatielink. Nadat u hier op heeft geklikt en een nieuw wachtwoord heet gekozen kunt u inloggen. U wordt doorgestuurd naar de homepage.";
+		$emailaddress = $_POST["email"].", freek@gmail.com";
+		$title = "Bedankt voor het registreren.";
+		$message = "Hallo";
+		$header = "From: Docent Applicatie en mediaontwikkeling Arjan de Ruijter <rra@mboutrecht.nl>\r\n";
+		$header .= "Cc: info@test.nl\r\n";
+		mail($emailaddress, $title, $message, $header);
+		header("refresh: 6; url=index.php?content=homepage");
 	}
 	else
 	{
-		// Geef de gebruiker de aanwijzing om een mail te sturen naar info@inlogregistratietutorialsite.nl en verwijs door naar de homepage.
-		echo "mislukt";
+		echo "Uw gegevens zijn niet correct ontvangen. Meldt dit bij info@inlogregistratietutorialsite.nl. U wordt doorgestuurd naar de homepage.";
+		header("refresh: 6; url=index.php?content=homepage");
 	}
-	
-	// Huiswerk dit formulier werkend maken tot en met het wegschrijven naar de database en 
-	// het redirecten naar een andere pagina + succes/faal melding.
