@@ -33,7 +33,7 @@
 			<head>
 			</head>
 			<body>
-				<h3 style='color:green; font-family:Verdana; font-size:60px;'>Bedankt voor het registreren. Door <a href='http://localhost/2015-2016/blok1/am1b/inlogregistratietutorialsite/index.php?content=activation&id=".$id."'>hier</a> te klikken activeert u het account en kunt u inloggen</h3>
+				<h3 style='color:grey; font-family:Verdana; font-size:12px;'>Bedankt voor het registreren. Door <a href='http://localhost/2015-2016/blok1/am1b/inlogregistratietutorialsite/index.php?content=activation&id=".$id."'>hier</a> te klikken activeert u het account en kunt u inloggen</h3>
 			</body>		
 		</html>";
 		$header = "From: Docent Applicatie en mediaontwikkeling Arjan de Ruijter <rra@mboutrecht.nl>\r\n";
