@@ -1,13 +1,13 @@
 <?php
 	if ( isset($_POST["submit"]))
 	{
-		echo "Er is gedrukt op de submitknop<br><br>";
-		$wachtwoord = "K";
-		echo MD5("j");
-		echo "<br><br>";
-		var_dump($_POST);
+		//echo "Er is gedrukt op de submitknop<br><br>";
+		//$wachtwoord = "K";
+		//echo MD5("j");
+		//echo "<br><br>";
+		//var_dump($_POST);
 		$result = strcmp($_POST["password"], $_POST["check_password"]);
-		var_dump($result);
+		//var_dump($result);
 		if ($result == 0)
 		{
 			// Update het passwordveld met het correcte password. Stuur daarna door naar login_form.php
@@ -22,7 +22,7 @@
 			if ($result)
 			{
 				echo "U wachtwoord is succesvol gewijzigd. U wordt doorgestuurd naar de inlogpagina";
-				header("refresh:4000;url=index.php?content=login_form");
+				header("refresh:6;url=index.php?content=login_form");
 			}
 			else
 			{
@@ -33,6 +33,8 @@
 		else
 		{
 			// U ingevoerde wachtwoorden verschillen van elkaar, probeer het opnieuw. Redirect naar activation.php met id als GET - var
+			echo "U ingevoerde wachtwoorden komen niet overeen. Probeer nogmaals uw wachtwoord tweemaal in te voeren";
+			header("refresh:3; url=index.php?content=activation&id=".$_POST["id"]);
 		}		
 	}
 	else
