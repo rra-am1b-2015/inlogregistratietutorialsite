@@ -2,7 +2,7 @@
 	<table>
 		<tr>
 			<td>e-mail: </td>
-			<td><input type="email" name="email"></td>
+			<td><input type="email" name="email" value="<?php if (isset($_GET["email"])) { echo $_GET["email"]; } ?>"></td>
 		</tr>
 		
 		<tr>

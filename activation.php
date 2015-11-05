@@ -24,12 +24,12 @@
 			if ($result)
 			{
 				echo "U wachtwoord is succesvol gewijzigd. U wordt doorgestuurd naar de inlogpagina";
-				header("refresh:6;url=index.php?content=login_form");
+				header("refresh:6;url=index.php?content=login_form&email=".$_POST["email"]);
 			}
 			else
 			{
 				echo "Er is een probleem opgetreden met het opnieuw instellen van uw wachtwoord. Neem contact op met de systeembeheerder via info@inlogregistratiesysteemtutorialsite.nl";
-				header("refresh:5000; url=index.php?content=homepage");
+				header("refresh:5; url=index.php?content=homepage");
 			}
 		}
 		else
@@ -55,7 +55,10 @@
 		$result = mysqli_query($conn, $query);
 		
 		if ( mysqli_num_rows($result)> 0 )
-		{				
+		{
+			$record = mysqli_fetch_assoc($result);
+			$email = $record["email"];
+			
 			$query = "UPDATE 	`users` 
 					  SET 		`activation` = 'true'
 					  WHERE 	`id` = ".$_GET["id"].";";
@@ -83,6 +86,7 @@
 							<td>
 								<input type="hidden" name="id" value="<?php echo $_GET["id"]; ?>">
 								<input type="hidden" name="pw" value="<?php echo $_GET["pw"]; ?>">
+								<input type="hidden" name="email" value="<?php echo $email; ?>">
 							</td>
 							<td><input type="submit" name="submit"></td>
 						</tr>
