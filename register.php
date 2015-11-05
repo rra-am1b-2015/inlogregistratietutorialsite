@@ -1,8 +1,8 @@
 <?php
 	//var_dump($_POST);
 	
-	$date = date("d-m-Y H:i:s");
-	echo $date.substr($_POST["firstname"], 0, 3)."-".substr($_POST["lastname"], strlen($_POST["lastname"])-4, 4);
+	$password = date("d-m-Y-").substr($_POST["firstname"], 0, 3)."-".substr($_POST["lastname"], strlen($_POST["lastname"])-4, 4).date("-H:i:s");
+	echo MD5($password);
 	
 	exit();
 	
