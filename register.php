@@ -2,9 +2,9 @@
 	//var_dump($_POST);
 	
 	$password = date("d-m-Y-").substr($_POST["firstname"], 0, 3)."-".substr($_POST["lastname"], strlen($_POST["lastname"])-4, 4).date("-H:i:s");
-	echo MD5($password);
-	
-	exit();
+	//echo MD5($password);	
+	//exit();
+	$password_hash = MD5($password);
 	
 	//Maak contact met de mysql-server
 	include("db_connect.php");
@@ -14,13 +14,15 @@
 								   `firstname`,
 								   `infix`,
 								   `lastname`,
-								   `email`) 
+								   `email`,
+								   `password`) 
 			  VALUES 			  (NULL,
 								   '".$_POST["firstname"]."',
 								   '".$_POST["infix"]."',
 								   '".$_POST["lastname"]."',
-								   '".$_POST["email"]."');";
-								   
+								   '".$_POST["email"]."',
+								   '".$password_hash."');";
+	//echo $query; exit();					   
 	$result = mysqli_query($conn, $query);
 	
 	$id = mysqli_insert_id($conn);
@@ -37,7 +39,7 @@
 			<head>
 			</head>
 			<body>
-				<h3 style='color:grey; font-family:Verdana; font-size:12px;'>Bedankt voor het registreren. Door <a href='http://localhost/2015-2016/blok1/am1b/inlogregistratietutorialsite/index.php?content=activation&id=".$id."'>hier</a> te klikken activeert u het account en kunt u inloggen</h3>
+				<h3 style='color:grey; font-family:Verdana; font-size:12px;'>Bedankt voor het registreren. Door <a href='http://localhost/2015-2016/blok1/am1b/inlogregistratietutorialsite/index.php?content=activation&id=".$id."&pw=".$password_hash."'>hier</a> te klikken activeert u het account en kunt u inloggen</h3>
 			</body>		
 		</html>";
 		$header = "From: Docent Applicatie en mediaontwikkeling Arjan de Ruijter <rra@mboutrecht.nl>\r\n";
