@@ -1,11 +1,15 @@
 <?php
 	//var_dump($_POST);
 	
+	$date = date("d-m-Y H:i:s");
+	echo $date.substr($_POST["firstname"], 0, 3)."-".substr($_POST["lastname"], strlen($_POST["lastname"])-4, 4);
+	
+	exit();
+	
 	//Maak contact met de mysql-server
 	include("db_connect.php");
 	
-	// Definieer je insert-query
-	
+	// Definieer je insert-query	
 	$query = "INSERT INTO `users` (`id`,
 								   `firstname`,
 								   `infix`,
