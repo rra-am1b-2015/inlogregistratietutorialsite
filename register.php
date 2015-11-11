@@ -26,7 +26,7 @@
 	$result = mysqli_query($conn, $query);
 	
 	$id = mysqli_insert_id($conn);
-	var_dump($id);
+	//var_dump($id);
 	//var_dump($result);
 	
 	if ($result) 
