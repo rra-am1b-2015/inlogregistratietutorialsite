@@ -18,8 +18,25 @@
 	if ( mysqli_num_rows($result) > 0)
 	{	
 		//var_dump($record);
-		header("location:index.php?content=developer_homepage");
-		
+		// Maak een switch voor het doorsturen naar de verschillende gebruikersrol homepages
+		switch ($record["userrole"])
+		{
+			case "administrator":
+				header("location:index.php?content=administrator_homepage");
+				break;
+			case "root":
+				header("location:index.php?content=root_homepage");
+				break;
+			case "customer":
+				header("location:index.php?content=customer_homepage");
+				break;
+			case "developer":
+				header("location:index.php?content=developer_homepage");
+				break;
+			default:
+				header("location:index.php?content=homepage");
+				break;		
+		}		
 	}
 	else
 	{
