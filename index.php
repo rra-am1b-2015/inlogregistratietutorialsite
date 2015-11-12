@@ -3,7 +3,7 @@
 <html>
  <head>	
 	<title>inlogregistratie - tutorialsite</title>
-	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/style.php">
 	<link rel="stylesheet" media="(max-width:800px; )" type="text/css" href="css/style-mobile.css">
  </head>
  <body>
