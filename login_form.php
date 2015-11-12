@@ -2,12 +2,23 @@
 	<table>
 		<tr>
 			<td>e-mail: </td>
-			<td><input type="email" name="email" value="<?php if (isset($_GET["email"])) { echo $_GET["email"]; } ?>"></td>
+			<td><input type="email" 
+					   name="email" 
+					   value="<?php 
+								if (isset($_GET["email"])) 
+								{ 
+									echo $_GET["email"];
+								} 
+								else
+								{
+									echo "developer@gmail.com";
+								}?>">
+			</td>
 		</tr>
 		
 		<tr>
 			<td>wachtwoord: </td>
-			<td><input type="password" name="password"></td>
+			<td><input type="password" name="password" autofocus></td>
 		</tr>
 		<tr>
 			<td></td>
