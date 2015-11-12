@@ -1,5 +1,4 @@
 <?php
-	session_start();
 	if ( !isset($_SESSION["id"]))
 	{
 		echo "Niet ingelogd";
@@ -14,6 +13,6 @@
 	}
 	else
 	{
-		echo "<h5>Welkom ".$_SESSION["firstname"]." ".$_SESSION["infix"]." ".$_SESSION["lastname"]." | ".$_SESSION["userrole"]."</h5>";
+		
 	}	
 ?>

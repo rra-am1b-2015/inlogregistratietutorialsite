@@ -1,5 +1,4 @@
 <?php
-	session_start();
 	//var_dump($_POST);	
 	// Contact maken met de server
 	if ( isset($_POST["email"]) || isset($_POST["password"]))

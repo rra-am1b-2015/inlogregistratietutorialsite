@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html>
  <head>	
@@ -13,7 +14,9 @@
 		<div id="link">
 			<?php include("link.php"); ?>
 		</div>
-		
+		<div id="user">
+			<?php include("user.php"); ?>
+		</div>
 		<div id="content">
 			<?php include("redirect.php"); ?>
 		</div>
