@@ -29,7 +29,7 @@ body
 #banner, #footer
 {
 	font-size:25px;
-	background-color:RGB(138,192,7);
+	background-color:RGB(255,127,0);
 	color:white;
 	text-align:center;
 	padding:10px;
@@ -69,6 +69,8 @@ body
 	text-align:center;
 }
 
+
+
 <?php
  if (isset($_SESSION["id"]))
  {
@@ -77,29 +79,26 @@ body
 			border:1px solid RGBA(138, 192, 7, 1);
 			padding:8px;
 			margin-top:15px;
-			border-bottom-left-radius:12px;
-			border-bottom-right-radius:12px;
+			border-bottom-left-radius:0px;
+			border-bottom-right-radius:0px;
 			border-top-left-radius:12px;
 			border-top-right-radius:12px;
 			text-align:left;
 			background-color:RGBA(245,245,245, 1);
-		  }";
- }
- else
- {
-	echo "#user
+			color: grey
+		  }
+		  
+		  #userrole_link
 		  {
 			border:1px solid RGBA(138, 192, 7, 1);
-			padding:8px;
-			margin-top:15px;
+			padding:6px;
 			border-bottom-left-radius:12px;
 			border-bottom-right-radius:12px;
-			border-top-left-radius:12px;
-			border-top-right-radius:12px;
-			text-align:left;
-			background-color:RGBA(138, 192, 7, 1);
+			text-align:center;
+			background-color: rgba(101, 193, 205, 1);
+			color: white;
 		  }";
-  }
+ }
 ?>
 
 #user_img
