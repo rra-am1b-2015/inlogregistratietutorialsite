@@ -4,32 +4,42 @@
 Maak 3 divjes onder elkaar. Geef ieder divje een andere kleur  met css en id's
 
 <section>
-	<a href='index.php?content=float.php'><div id='div_1'>
-		floats
-	</div></a>
+	<div id='div_1'>
+		<ul>
+			<li><a href=''>test1</a></li>
+			<li><a href=''>test2</a></li>
+			<li><a href=''>test3</a></li>
+			<li><a href=''>test4</a></li>
+			<li><a href=''>test5</a></li>
+			<li><a href=''>test6</a></li>
+			<li><a href=''>test7</a></li>
+			<li><a href=''>test8</a></li>
+			<li><a href=''>test9</a></li>
+			<li><a href=''>test10</a></li>
+		</ul>
+	</div>
 	<div id='div_2'>
-		boxmodel
-	</div>
-	<div id='div_3'>
-		Pseudo Class
-	</div>
-	<div id='div_4'>
-	4
-	</div>
-	<div id='div_5'>
-	5
-	</div>
-	<div id='div_6'>
-	6
-	</div>
-	<div id='div_7'>
-	7
-	</div>
-	<div id='div_8'>
-	8
-	</div>
-	<div id='div_9'>
-	9
+		<div id='div_3'>
+			Pseudo Class
+		</div>
+		<div id='div_4'>
+		4
+		</div>
+		<div id='div_5'>
+		5
+		</div>
+		<div id='div_6'>
+		6
+		</div>
+		<div id='div_7'>
+		7
+		</div>
+		<div id='div_8'>
+		8
+		</div>
+		<div id='div_9' style='clear:both;'>
+		9
+		</div>
 	</div>
 	<div id='ending'>
 	</div>

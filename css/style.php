@@ -19,7 +19,7 @@ body
 #container
 {
 	border:0px solid green;
-	width:60%;
+	width:80%;
 	//margin-top:300px;
 	//margin-left:100px;
 	margin:20px auto;
@@ -160,7 +160,6 @@ section div
 {
 	margin: 1em 1em 1em 1em;
 	width: 200px;
-	height: 60px;
 	color: white;
 	font-size: 1.2em;
 	font-weight: bold;
@@ -179,6 +178,7 @@ section div
 	background-color: yellow;
 	border: 1px solid black;
 	float: left;
+	width:660px;
 }
 
 #div_3
@@ -228,7 +228,7 @@ section div
 {	
 	background-color: orange;
 	border: 1px solid black;
-	float: left;
+	float:left;
 }
 
 #ending
@@ -236,4 +236,14 @@ section div
 	border: 0px solid black;
 	height:0px;
 	clear:both;
+}
+
+#div_2 div
+{
+	width:150px;
+}
+
+#div_9
+{
+	clear: both;
 }
