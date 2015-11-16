@@ -136,9 +136,55 @@ a
 {
 	text-decoration:none;
 	color:orange;
+	font-weight: bold;
+}
+
+#userrole_link a
+{
+	text-decoration:none;
+	color:rgba(237, 245, 245, 1);
 }
 
 a:hover
 {
 	font-size:13.6px;
+}
+
+section
+{
+	background-color: rgba(240,237, 245,1);
+	border: 1px solid black;
+}
+
+#top
+{	
+	background-color: red;
+	border: 1px solid black;
+	height:60px;
+	width: 60px;
+	float: left;
+}
+
+#middle
+{	
+	background-color: yellow;
+	border: 1px solid black;
+	height:60px;
+	width: 60px;
+	float: left;
+}
+
+#bottom
+{	
+	background-color: blue;
+	border: 1px solid black;
+	height:60px;
+	width: 60px;
+	float: left;
+}
+
+#ending
+{
+	border: 1px solid black;
+	clear:both;
 }
