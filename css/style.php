@@ -153,12 +153,24 @@ a:hover
 section
 {
 	background-color: rgba(240,237, 245,1);
-	border: 1px solid black;
+	border: 0px solid black;
+}
+
+#div_1, #div_2
+{
+	padding-top:1em;
+	padding-bottom:1000em;
+	margin-bottom: -999em;
+}
+
+section
+{
+	overflow:hidden;
 }
 
 section div
 {
-	margin: 1em 1em 1em 1em;
+	margin: 0em 1em 1em 1em;
 	width: 200px;
 	color: white;
 	font-size: 1.2em;
@@ -168,17 +180,18 @@ section div
 
 #div_1
 {	
-	background-color: red;
-	border: 1px solid black;
+	background-color: rgba(240, 232, 240, 1);
+	border: 0px solid black;
 	float: left;
+	width:20%;
 }
 
 #div_2
 {	
-	background-color: yellow;
-	border: 1px solid black;
+	background-color: rgba(240, 232, 240, 1);
+	border: 0px solid black;
 	float: left;
-	width:660px;
+	width:73%;
 }
 
 #div_3

@@ -12,13 +12,28 @@ Maak 3 divjes onder elkaar. Geef ieder divje een andere kleur  met css en id's
 			<li><a href=''>test4</a></li>
 			<li><a href=''>test5</a></li>
 			<li><a href=''>test6</a></li>
-			<li><a href=''>test7</a></li>
-			<li><a href=''>test8</a></li>
-			<li><a href=''>test9</a></li>
-			<li><a href=''>test10</a></li>
+			<li><a href=''>test1</a></li>
+			<li><a href=''>test2</a></li>
+			<li><a href=''>test3</a></li>
+			<li><a href=''>test4</a></li>
+			<li><a href=''>test5</a></li>
+			<li><a href=''>test6</a></li>
+			<li><a href=''>test1</a></li>
+			<li><a href=''>test2</a></li>
+			<li><a href=''>test3</a></li>
+			<li><a href=''>test4</a></li>
+			<li><a href=''>test5</a></li>
+			<li><a href=''>test6</a></li>
+			<li><a href=''>test1</a></li>
+			<li><a href=''>test2</a></li>
+			<li><a href=''>test3</a></li>
+			<li><a href=''>test4</a></li>
+			<li><a href=''>test5</a></li>
+			<li><a href=''>test6</a></li>
 		</ul>
 	</div>
 	<div id='div_2'>
+	ssfsslkdfl slfkjsdlfjs lksjdf sdjfkls kdjf lskjflk slkjdf lskj dflsjfl slkj sdlkfj lsjsdfkkjl lkj sdjfl jslkj slkjdfl kjlkj lj sjdflj lkjsdlfj slkdjf lskjdflksjd flskjd fssfsslkdfl slfkjsdlfjs lksjdf sdjfkls kdjf lskjflk slkjdf lskj dflsjfl slkj sdlkfj lsjsdfkkjl lkj sdjfl jslkj slkjdfl kjlkj lj sjdflj lkjsdlfj slkdjf lskjdflksjd flskjd fssfsslkdfl slfkjsdlfjs lksjdf sdjfkls kdjf lskjflk slkjdf lskj dflsjfl slkj sdlkfj lsjsdfkkjl lkj sdjfl jslkj slkjdfl kjlkj lj sjdflj lkjsdlfj slkdjf lskjdflksjd flskjd ssfsslkdfl slfkjsdlfjs lksjdf sdjfkls kdjf lskjflk slkjdf lskj dflsjfl slkj sdlkfj lsjsdfkkjl lkj sdjfl jslkj slkjdfl kjlkj lj sjdflj lkjsdlfj slkdjf lskjdflksjd flskjd fssfsslkdfl slfkjsdlfjs lksjdf sdjfkls kdjf lskjflk slkjdf lskj dflsjfl slkj sdlkfj lsjsdfkkjl lkj sdjfl jslkj slkjdfl kjlkj lj sjdflj lkjsdlfj slkdjf lskjdflksjd flskjd fssfsslkdfl slfkjsdlfjs lksjdf sdjfkls kdjf lskjflk slkjdf lskj dflsjfl slkj sdlkfj lsjsdfkkjl lkj sdjfl jslkj slkjdfl kjlkj lj sjdflj lkjsdlfj slkdjf lskjdflksjd flskjdssfsslkdfl slfkjsdlfjs lksjdf sdjfkls kdjf lskjflk slkjdf lskj dflsjfl slkj sdlkfj lsjsdfkkjl lkj sdjfl jslkj slkjdfl kjlkj lj sjdflj lkjsdlfj slkdjf lskjdflksjd flskjd fssfsslkdfl slfkjsdlfjs lksjdf sdjfkls kdjf lskjflk slkjdf lskj dflsjfl slkj sdlkfj lsjsdfkkjl lkj sdjfl jslkj slkjdfl kjlkj lj sjdflj lkjsdlfj slkdjf lskjdflksjd flskjd fssfsslkdfl slfkjsdlfjs lksjdf sdjfkls kdjf lskjflk slkjdf lskj dflsjfl slkj sdlkfj lsjsdfkkjl lkj sdjfl jslkj slkjdfl kjlkj lj sjdflj lkjsdlfj slkdjf lskjdflksjd flskjdssfsslkdfl slfkjsdlfjs lksjdf sdjfkls kdjf lskjflk slkjdf lskj dflsjfl slkj sdlkfj lsjsdfkkjl lkj sdjfl jslkj slkjdfl kjlkj lj sjdflj lkjsdlfj slkdjf lskjdflksjd flskjd fssfsslkdfl slfkjsdlfjs lksjdf sdjfkls kdjf lskjflk slkjdf lskj dflsjfl slkj sdlkfj lsjsdfkkjl lkj sdjfl jslkj slkjdfl kjlkj lj sjdflj lkjsdlfj slkdjf lskjdflksjd flskjd fssfsslkdfl slfkjsdlfjs lksjdf sdjfkls kdjf lskjflk slkjdf lskj dflsjfl slkj sdlkfj lsjsdfkkjl lkj sdjfl jslkj slkjdfl kjlkj lj sjdflj lkjsdlfj slkdjf lskjdflksjd flskjdssfsslkdfl slfkjsdlfjs lksjdf sdjfkls kdjf lskjflk slkjdf lskj dflsjfl slkj sdlkfj lsjsdfkkjl lkj sdjfl jslkj slkjdfl kjlkj lj sjdflj lkjsdlfj slkdjf lskjdflksjd flskjd fssfsslkdfl slfkjsdlfjs lksjdf sdjfkls kdjf lskjflk slkjdf lskj dflsjfl slkj sdlkfj lsjsdfkkjl lkj sdjfl jslkj slkjdfl kjlkj lj sjdflj lkjsdlfj slkdjf lskjdflksjd flskjd fssfsslkdfl slfkjsdlfjs lksjdf sdjfkls kdjf lskjflk slkjdf lskj dflsjfl slkj sdlkfj lsjsdfkkjl lkj sdjfl jslkj slkjdfl kjlkj lj sjdflj lkjsdlfj slkdjf lskjdflksjd flskjdssfsslkdfl slfkjsdlfjs lksjdf sdjfkls kdjf lskjflk slkjdf lskj dflsjfl slkj sdlkfj lsjsdfkkjl lkj sdjfl jslkj slkjdfl kjlkj lj sjdflj lkjsdlfj slkdjf lskjdflksjd flskjd fssfsslkdfl slfkjsdlfjs lksjdf sdjfkls kdjf lskjflk slkjdf lskj dflsjfl slkj sdlkfj lsjsdfkkjl lkj sdjfl jslkj slkjdfl kjlkj lj sjdflj lkjsdlfj slkdjf lskjdflksjd flskjd fssfsslkdfl slfkjsdlfjs lksjdf sdjfkls kdjf lskjflk slkjdf lskj dflsjfl slkj sdlkfj lsjsdfkkjl lkj sdjfl jslkj slkjdfl kjlkj lj sjdflj lkjsdlfj slkdjf lskjdflksjd flskjdssfsslkdfl slfkjsdlfjs lksjdf sdjfkls kdjf lskjflk slkjdf lskj dflsjfl slkj sdlkfj lsjsdfkkjl lkj sdjfl jslkj slkjdfl kjlkj lj sjdflj lkjsdlfj slkdjf lskjdflksjd flskjd fssfsslkdfl slfkjsdlfjs lksjdf sdjfkls kdjf lskjflk slkjdf lskj dflsjfl slkj sdlkfj lsjsdfkkjl lkj sdjfl jslkj slkjdfl kjlkj lj sjdflj lkjsdlfj slkdjf lskjdflksjd flskjd fssfsslkdfl slfkjsdlfjs lksjdf sdjfkls kdjf lskjflk slkjdf lskj dflsjfl slkj sdlkfj lsjsdfkkjl lkj sdjfl jslkj slkjdfl kjlkj lj sjdflj lkjsdlfj slkdjf lskjdflksjd flskjdssfsslkdfl slfkjsdlfjs lksjdf sdjfkls kdjf lskjflk slkjdf lskj dflsjfl slkj sdlkfj lsjsdfkkjl lkj sdjfl jslkj slkjdfl kjlkj lj sjdflj lkjsdlfj slkdjf lskjdflksjd flskjd fssfsslkdfl slfkjsdlfjs lksjdf sdjfkls kdjf lskjflk slkjdf lskj dflsjfl slkj sdlkfj lsjsdfkkjl lkj sdjfl jslkj slkjdfl kjlkj lj sjdflj lkjsdlfj slkdjf lskjdflksjd flskjd fssfsslkdfl slfkjsdlfjs lksjdf sdjfkls kdjf lskjflk slkjdf lskj dflsjfl slkj sdlkfj lsjsdfkkjl lkj sdjfl jslkj slkjdfl kjlkj lj sjdflj lkjsdlfj slkdjf lskjdflksjd flskjdssfsslkdfl slfkjsdlfjs lksjdf sdjfkls kdjf lskjflk slkjdf lskj dflsjfl slkj sdlkfj lsjsdfkkjl lkj sdjfl jslkj slkjdfl kjlkj lj sjdflj lkjsdlfj slkdjf lskjdflksjd flskjd fssfsslkdfl slfkjsdlfjs lksjdf sdjfkls kdjf lskjflk slkjdf lskj dflsjfl slkj sdlkfj lsjsdfkkjl lkj sdjfl jslkj slkjdfl kjlkj lj sjdflj lkjsdlfj slkdjf lskjdflksjd flskjd fssfsslkdfl slfkjsdlfjs lksjdf sdjfkls kdjf lskjflk slkjdf lskj dflsjfl slkj sdlkfj lsjsdfkkjl lkj sdjfl jslkj slkjdfl kjlkj lj sjdflj lkjsdlfj slkdjf lskjdflksjd flskjdssfsslkdfl slfkjsdlfjs lksjdf sdjfkls kdjf lskjflk slkjdf lskj dflsjfl slkj sdlkfj lsjsdfkkjl lkj sdjfl jslkj slkjdfl kjlkj lj sjdflj lkjsdlfj slkdjf lskjdflksjd flskjd fssfsslkdfl slfkjsdlfjs lksjdf sdjfkls kdjf lskjflk slkjdf lskj dflsjfl slkj sdlkfj lsjsdfkkjl lkj sdjfl jslkj slkjdfl kjlkj lj sjdflj lkjsdlfj slkdjf lskjdflksjd flskjd fssfsslkdfl slfkjsdlfjs lksjdf sdjfkls kdjf lskjflk slkjdf lskj dflsjfl slkj sdlkfj lsjsdfkkjl lkj sdjfl jslkj slkjdfl kjlkj lj sjdflj lkjsdlfj slkdjf lskjdflksjd flskjdssfsslkdfl slfkjsdlfjs lksjdf sdjfkls kdjf lskjflk slkjdf lskj dflsjfl slkj sdlkfj lsjsdfkkjl lkj sdjfl jslkj slkjdfl kjlkj lj sjdflj lkjsdlfj slkdjf lskjdflksjd flskjd fssfsslkdfl slfkjsdlfjs lksjdf sdjfkls kdjf lskjflk slkjdf lskj dflsjfl slkj sdlkfj lsjsdfkkjl lkj sdjfl jslkj slkjdfl kjlkj lj sjdflj lkjsdlfj slkdjf lskjdflksjd flskjd fssfsslkdfl slfkjsdlfjs lksjdf sdjfkls kdjf lskjflk slkjdf lskj dflsjfl slkj sdlkfj lsjsdfkkjl lkj sdjfl jslkj slkjdfl kjlkj lj sjdflj lkjsdlfj slkdjf lskjdflksjd flskjdf
 		<div id='div_3'>
 			Pseudo Class
 		</div>
@@ -37,10 +52,9 @@ Maak 3 divjes onder elkaar. Geef ieder divje een andere kleur  met css en id's
 		<div id='div_8'>
 		8
 		</div>
-		<div id='div_9' style='clear:both;'>
+		<div id='div_9'>
 		9
 		</div>
 	</div>
-	<div id='ending'>
-	</div>
+	<br id='ending'>
 </section>
