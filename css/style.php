@@ -156,12 +156,6 @@ section
 	border: 0px solid black;
 }
 
-#div_1, #div_2
-{
-	padding-top:1em;
-	padding-bottom:1000em;
-	margin-bottom: -999em;
-}
 
 section
 {
@@ -172,91 +166,70 @@ section div
 {
 	margin: 0em 1em 1em 1em;
 	width: 200px;
+	height: 100px;
 	color: white;
 	font-size: 1.2em;
 	font-weight: bold;
 	text-align: center;
+	border: 1px solid black;
 }
 
 #div_1
 {	
-	background-color: rgba(240, 232, 240, 1);
-	border: 0px solid black;
+	background-color: yellow;
 	float: left;
-	width:20%;
+	width: 40%;
 }
 
 #div_2
 {	
-	background-color: rgba(240, 232, 240, 1);
-	border: 0px solid black;
+	background-color: green;
 	float: left;
-	width:73%;
+	width:50%
 }
 
 #div_3
 {	
 	background-color: blue;
-	border: 1px solid black;
 	float: left;
+	clear:left;
 }
 
 #div_4
 {	
 	background-color: pink;
-	border: 1px solid black;
-	float: left;
+	float:left;
 }
 
 #div_5
 {	
 	background-color: purple;
-	border: 1px solid black;
-	float: left;
+	float:left;
 
 }
 
 #div_6
 {	
 	background-color: green;
-	border: 1px solid black;
-	float: left;
+	float:left;
 }
 
 #div_7
 {	
 	background-color: cyan;
-	border: 1px solid black;
 	float: left;
 }
 
 #div_8
 {	
 	background-color: beige;
-	border: 1px solid black;
-	float: left;
+	float:left;
 }
 
 #div_9
 {	
 	background-color: orange;
-	border: 1px solid black;
 	float:left;
 }
 
-#ending
-{
-	border: 0px solid black;
-	height:0px;
-	clear:both;
-}
 
-#div_2 div
-{
-	width:150px;
-}
-
-#div_9
-{
-	clear: both;
-}
