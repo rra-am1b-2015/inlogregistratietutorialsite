@@ -49,7 +49,7 @@ body
 	background-color: RGB(245,245,245);
 	border:1px solid RGB(138, 192, 7);
 	color:RGB(24, 24, 24);
-	padding:20px;
+	padding:5px;
 	margin:15px 0px;
 }
 
@@ -311,5 +311,47 @@ section#end
 {
 	overflow:hidden;
 }
+
+#dev-home-container
+{
+	border: 0px solid black;
+	overflow:hidden;
+}
+
+
+#dev-home-container nav, section
+{
+	background-color:rgba(200, 200, 200, 1);
+	border-radius:6px;
+	padding:2%;
+	margin: 0.5%;
+	padding-bottom: 1000em;
+	margin-bottom: -998em;
+}
+
+#dev-home-container nav
+{
+	float:left;
+	width:15%;
+	color:white;
+	
+}
+
+#dev-home-container section
+{
+	float:right;
+	width: 75%;
+}
+
+#dev-home-container a
+{
+	color:white;
+	//border:1px solid black;
+	display:block;
+	text-align:right;
+	padding:0.3em;
+}
+
+
 
 
