@@ -157,10 +157,7 @@ section
 }
 
 
-section
-{
-	overflow:hidden;
-}
+
 
 section div
 {
@@ -174,37 +171,52 @@ section div
 	border: 1px solid black;
 }
 
+#clearBoth
+{
+	background-color: rgba(200, 200, 200, 1);
+	height:20px;
+	width:20%;
+	clear:both;
+	float:left;
+}
+
 #div_1
 {	
 	background-color: yellow;
-	float: left;
-	width: 40%;
+	float:left;
+	width:20%;
+	height:600px;
 }
 
 #div_2
 {	
 	background-color: green;
-	float: left;
-	width:50%
+	float:left;
+	width:72%;
+	height:400px;
 }
 
 #div_3
 {	
 	background-color: blue;
-	float: left;
+	float:left;
 	clear:left;
+	width:50%;
 }
 
 #div_4
 {	
 	background-color: pink;
-	float:left;
+	float: left;
+	width:15%;
+	
 }
 
 #div_5
 {	
 	background-color: purple;
 	float:left;
+	width:23%;
 
 }
 
@@ -212,6 +224,7 @@ section div
 {	
 	background-color: green;
 	float:left;
+	clear:left;
 }
 
 #div_7
@@ -230,6 +243,73 @@ section div
 {	
 	background-color: orange;
 	float:left;
+}
+
+#div_10
+{	
+	background-color: yellow;
+	float: left;
+}
+
+#div_11
+{	
+	background-color: green;
+	float: left;
+}
+
+#div_12
+{	
+	background-color: blue;
+	float: left;
+}
+
+#div_13
+{	
+	background-color: pink;
+	float:left;
+}
+
+#div_14
+{	
+	background-color: purple;
+	float:left;
+
+}
+
+#div_15
+{	
+	background-color: green;
+	float:left;
+}
+
+#div_16
+{	
+	background-color: cyan;
+	float: left;
+}
+
+#div_17
+{	
+	background-color: beige;
+	float:left;
+}
+
+#div_18
+{	
+	background-color: orange;
+	float:left;
+}
+
+/*
+#end
+{
+	clear:both;
+}
+*/
+
+section#end
+{
+	overflow:hidden;
 }
 
 
