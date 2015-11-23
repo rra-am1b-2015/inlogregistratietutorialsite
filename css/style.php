@@ -332,7 +332,7 @@ section#end
 #dev-home-container nav
 {
 	float:left;
-	width:15%;
+	width:18%;
 	color:white;
 	
 }
@@ -340,7 +340,7 @@ section#end
 #dev-home-container section
 {
 	float:right;
-	width: 75%;
+	width: 72%;
 }
 
 #dev-home-container a
