@@ -107,27 +107,28 @@ body
 }
 
 
-#register
+#register, #login
 {
 	border:0px solid yellow;
 	width:360px;
 	margin:0px auto;
 }
 
-#register table, td
+
+#register table, #register td, #login table, #login td
 {
 	border: 0px solid black;
 	border-collapse: collapse;
 	padding:5px;
 }
 
-#register input
+#register input, #login input
 {
 	padding:5px;
 	width:200px;
 }
 
-#register input[type=submit]
+#register input[type=submit], #login input[type=submit]
 {
 	width:214px;
 }
@@ -150,7 +151,7 @@ a:hover
 	font-size:13.6px;
 }
 
-section
+<br>
 {
 	background-color: rgba(240,237, 245,1);
 	border: 0px solid black;
@@ -159,7 +160,7 @@ section
 
 
 
-section div
+<br> div
 {
 	margin: 0em 1em 1em 1em;
 	width: 200px;
@@ -307,7 +308,7 @@ section div
 }
 */
 
-section#end
+<br>#end
 {
 	overflow:hidden;
 }
@@ -319,7 +320,7 @@ section#end
 }
 
 
-#dev-home-container nav, section
+#dev-home-container nav, <br>
 {
 	background-color:rgba(200, 200, 200, 1);
 	border-radius:6px;
@@ -337,7 +338,7 @@ section#end
 	
 }
 
-#dev-home-container section
+#dev-home-container <br>
 {
 	float:right;
 	width: 72%;

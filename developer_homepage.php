@@ -1,5 +1,5 @@
 <?php
-	$userrole = "developer";
+	$userrole = array("developer");
 	include("security.php");
 	echo "<h3>Dit is de developer homepage</h3>";
 ?>
@@ -39,7 +39,7 @@
 		?>
 	</nav>
 	
-	<section>
+	<<br>>
 		<?php
 			if (isset($_GET["page"]))
 			{
@@ -50,5 +50,5 @@
 				echo "Klik hiernaast op een link voor een tutorial";
 			}
 		?>	
-	</section>
+	</<br>>
 </div> 
