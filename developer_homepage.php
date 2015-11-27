@@ -1,7 +1,7 @@
 <?php
 	$userrole = "developer";
 	include("security.php");
-	echo "Dev-page";
+	echo "<h3>Dit is de developer homepage</h3>";
 ?>
 
 <div id="dev-home-container">
@@ -18,22 +18,23 @@
 			switch ($topic)
 			{
 				case "css":
-				?>
-					<a href='index.php?content=developer_homepage&topic=css&page=tutorials/css/floats'>floats</a>
-					<a href='index.php?content=developer_homepage&topic=css&page=tutorials/css/container-collapse'>container collapse</a>
-					<a href='index.php?content=developer_homepage&topic=css&page=tutorials/css/column-collapse'>column collapse</a>
-					<a href='index.php?content=developer_homepage&topic=css&page=tutorials/css/clearfix'>clearfix</a>
-					<!--container-collapse
-						column-collapse
-						clearfix-->
-		<?php
+					include("topic_links/css_link.php");
 				break;
 				case "php":
-				?>
-					<a href='index.php?content=developer_homepage&topic=php&page=tutorials/css/floats'>variables</a>
-					<a href='index.php?content=developer_homepage&topic=php&page=tutorials/css/container-collapse'>switch case</a>
-					<a href='index.php?content=developer_homepage&topic=php&page=tutorials/css/column-collapse'>if elsif else</a>
-		<?php
+					include("topic_links/php_links.php");
+				break;
+				case "javascript":
+					include("topic_links/javascript_links.php");
+				break;
+				case "jquery":
+					include("topic_links/jquery_links.php");
+				break;
+				case "sass":
+					include("topic_links/sass_links.php");
+				break;
+				case "less":
+					include("topic_links/less_links.php");
+				break;
 			}
 		?>
 	</nav>

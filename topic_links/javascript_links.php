@@ -1,0 +1,1 @@
+<a href='index.php?content=developer_homepage&topic=javascript&page=tutorials/javascript/get_started'>Javascript Get Started</a>

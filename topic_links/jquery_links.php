@@ -1,0 +1,1 @@
+<a href='index.php?content=developer_homepage&topic=jquery&page=tutorials/jquery/get_started'>JQuery Get Started</a>
