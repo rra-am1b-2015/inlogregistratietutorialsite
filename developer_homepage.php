@@ -38,8 +38,7 @@
 			}
 		?>
 	</nav>
-	
-	<<br>>
+	<section>
 		<?php
 			if (isset($_GET["page"]))
 			{
@@ -49,6 +48,6 @@
 			{
 				echo "Klik hiernaast op een link voor een tutorial";
 			}
-		?>	
-	</<br>>
+		?>
+	<section>
 </div> 

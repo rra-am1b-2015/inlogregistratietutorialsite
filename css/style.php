@@ -151,12 +151,12 @@ a:hover
 	font-size:13.6px;
 }
 
-<br>
+/*
 {
 	background-color: rgba(240,237, 245,1);
 	border: 0px solid black;
 }
-
+*/
 
 
 
@@ -308,7 +308,7 @@ a:hover
 }
 */
 
-<br>#end
+#end
 {
 	overflow:hidden;
 }
@@ -320,7 +320,7 @@ a:hover
 }
 
 
-#dev-home-container nav, <br>
+#dev-home-container nav
 {
 	background-color:rgba(200, 200, 200, 1);
 	border-radius:6px;
@@ -334,11 +334,11 @@ a:hover
 {
 	float:left;
 	width:18%;
-	color:white;
+	color:black;
 	
 }
 
-#dev-home-container <br>
+#dev-home-container section
 {
 	float:right;
 	width: 72%;
@@ -346,7 +346,7 @@ a:hover
 
 #dev-home-container a
 {
-	color:white;
+	color:grey;
 	//border:1px solid black;
 	display:block;
 	text-align:right;
