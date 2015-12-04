@@ -16,6 +16,7 @@
 
 <script>
 	
+	
 	$(document).ready(function()
 	{
 		//alert("Het werkt!");
@@ -28,12 +29,11 @@
 
 		$("#btn_2").click(function(){
 			$("p:odd").text("Dit is een even paragraaf!");
-			$("p:odd").css("background-color", "red").css("border", "10px dashed yellow");
+			$("p:odd").css("background-color", "red")
+					  .css("border", "10px dashed yellow");
 			$(this).html("Ik heb de even paragrafen verandert");
 			
-		});
-
-		
+		});		
 	});
 
 </script>

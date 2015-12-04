@@ -354,5 +354,14 @@ a:hover
 }
 
 
+#btn_1
+{
+	padding: 30px;
+	font-size: 2em;
+	font-weight: bold;
+	color: rgba(10,10,10,0.5);
+}
+
+
 
 
