@@ -354,12 +354,24 @@ a:hover
 }
 
 
-#btn_1
+#btn_1, #btn_2, .btn_3, .btn_4
 {
-	padding: 30px;
-	font-size: 2em;
+	padding: 10px;
+	font-size: 1.2em;
 	font-weight: bold;
 	color: rgba(10,10,10,0.5);
+	width: 200px;
+	float: left;
+}
+
+.btn_3
+{
+	clear: left;
+}
+
+#nr
+{
+	background-color: rgb(225, 225,225);
 }
 
 
