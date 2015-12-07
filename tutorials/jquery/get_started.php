@@ -14,7 +14,10 @@
 <button id="btn_2">Verander de tekst van de even paragrafen</button>
 <button class="btn_3">Verander float instelling naar right voor de eerste paragraaf</button>
 <button class="btn_4">Verander float instelling naar right voor de laatste paragraaf</button>
-<button class="btn_4"><input id="nr" type="number"></input></button>
+<button class="btn_5"><input id="nr" type="number"></input>gt</button>
+<button class="btn_6"><input id="nr" type="number"></input>lt</button>
+<button class="btn_7"><input id="nr" type="number"></input>eq</button>
+<button class="btn_8"><input id="nr" type="number"></input>not</button>
 
 
 <script>
@@ -38,6 +41,8 @@
 			$("p").show();
 			$(this).text("Klik op mij!");			
 		});
+		
+		
 
 		$("#btn_2").click(function(){
 			$("p:odd").text("Dit is een even paragraaf!");
@@ -72,14 +77,44 @@
 			$("p:last").css("float", "none");
 		});
 		
-		$(".btn_5").click(function()
-		{
-			$("p:last").css("float", "right");
-		});
+		
 		$(".btn_5").dblclick(function()
 		{
-			$("p:last").css("float", "none");
+			var number = $(".btn_5 #nr").val();
+			$("p:gt(" + number + ")").css("border", "1px solid red");
+			console.log(number);
 		});
+		$(".btn_5").click(function()
+		{
+			$("p").css("border", "0px solid red");
+			console.log(number);
+		});
+		
+		$(".btn_6").dblclick(function()
+		{
+			var number = $(".btn_6 #nr").val();
+			$("p:lt(" + number + ")").css("border", "1px solid red");
+		});
+		$(".btn_6").click(function()
+		{
+			$("p").css("border", "0px solid red");
+			console.log(number);
+		});
+		
+		$(".btn_7").dblclick(function()
+		{
+			var number = $(".btn_7 #nr").val();
+			$("p:eq(" + number + ")").css("border", "1px solid red");
+			console.log(number);
+		});
+		
+		$(".btn_8").dblclick(function()
+		{
+			var number = $(".btn_8 #nr").val();
+			$("p:not(" + number + ")").css("border", "1px solid red");
+			console.log(number);
+		});
+		
 		
 	});
 

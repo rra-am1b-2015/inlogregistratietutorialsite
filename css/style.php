@@ -354,7 +354,7 @@ a:hover
 }
 
 
-#btn_1, #btn_2, .btn_3, .btn_4
+#btn_1, #btn_2, .btn_3, .btn_4, .btn_5
 {
 	padding: 10px;
 	font-size: 1.2em;
@@ -369,10 +369,18 @@ a:hover
 	clear: left;
 }
 
+.btn_5
+{	
+	width: 100px;
+}
+
 #nr
 {
 	background-color: rgb(225, 225,225);
+	width: 60px;
+	float:left;
 }
+
 
 
 
