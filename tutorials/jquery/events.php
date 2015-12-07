@@ -1,6 +1,8 @@
 <h4>JQuery Events</h4>
-
-<img src="./images/dwerghamster.jpg" alt="dwerghamster" >
+<button id="btn_show">Laat zien!</button>
+<button id="btn_hide">Verberg!</button>
+<button id="btn_toggle">Tokkel Aan/Uit</button>
+<img id="imgAnimal" src="./images/dwerghamster.jpg" alt="Russische Dwerghamster" >
 <p>Wat is dit voor dier?</p>
 <button id="btnNextAnimal">Volgende dier</button>
 
@@ -8,9 +10,45 @@
 <script>
 	$("document").ready(function(){
 		//alert("Hallo!!");
+		$("#imgAnimal").css({"width" : "300px",
+							 "display" : "block"});
+							 
+		$("button[id^='btn_']").css({"padding" : "1em 1.5em",
+									 "width" : "200px",
+									 "margin-bottom" : "0.5em",
+									 "font-size" : "1.3em",
+									 "color" : "rgba(0, 0, 0, 0.6)"});
+									 
+		$("#btn_hide").click(function(){
+			$("#imgAnimal").hide(1500, function(){
+				alert("Hij is verdwenen!");
+			});		
+		});
+		
+		$("#btn_show").click(function(){
+			$("#imgAnimal").show("fast");		
+		});
+		
+		var loadingTime = 1000;
+		$("#btn_toggle").click(function(){			
+			$("#imgAnimal").toggle(loadingTime, function(){
+				if ($("#btn_toggle").text() == "Kom terug!")
+				{
+					$("#btn_toggle").text("Verdwijn!");
+					loadingTime = 5000;
+				}
+				else
+				{
+					$("#btn_toggle").text("Kom terug!");
+					loadingTime = 2;
+				}
+			});
+		});
+		
 		$("img").mouseenter(function(){
 			$(this).css("border", "2px solid black");
-			$("p").text("Dit is een Russische dwerghamster");
+			var nameAnimal = $(this).attr("alt");
+			$("p").text("Dit is een " + nameAnimal);
 		});
 		
 		$("img").mouseleave(function(){
@@ -22,10 +60,15 @@
 						  "font-size" : "3em",
 						  "color" : "rgba(0, 0, 0, 0.5)",
 						  "width" : "700"};
+						  
 		
 		$("#btnNextAnimal").css(buttonSkin).click(function(){
-			$("img[alt='dwerghamster']").attr("src", "./images/snowleopard.jpg");		
+			$("#imgAnimal").attr("src", "./images/snowleopard.jpg")
+						   .attr("alt", "Sneeuwluipaard");
 		});
+		
+		var animalArray = ["./images/snowleopard.jpg" : "Sneeuwluipaard", 
+						   "./images/dwerghamster.jpg" : "Russische Dwerghamster"];
 		
 	});
 
