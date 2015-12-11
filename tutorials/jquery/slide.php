@@ -1,9 +1,7 @@
 <h4>JQuery Slide</h4>
-<button id="btn_fade_in">FadeIn</button> 
+<button id="btn_slide_down">Slide Down</button> 
 <button id="btn_slide_up">Slide Up</button> 
-<button id="btn_fade_toggle">FadeToggleOut</button>
-<button id="btn_fade_to20">To20%</button>
-<button id="btn_fade_to100">To100%</button> 
+<button id="btn_slide_toggle">SlideToggleUp</button>
 
 <div id='fade_demo'>
 	Fade Demo
@@ -33,49 +31,41 @@
 				//alert("Hallo ik ben weg!!");
 				console.log($(this).text());
 				//$(this).css("visibility", "hidden").css("display", "block");
-				if ( $("[id$='toggle']").text() == "FadeToggleIn")
+				if ( $("[id$='toggle']").text() == "SlideToggleDown")
 				{
-					$("[id$='toggle']").text("FadeToggleOut")
+					$("[id$='toggle']").text("SlideToggleUp")
 				}
 				else
 				{
-					$("[id$='toggle']").text("FadeToggleIn")
+					$("[id$='toggle']").text("SlideToggleDown")
 				}
 			});
 		});
 		
-		$("[id$='in']").click(function(){
-			$("#fade_demo").fadeIn(2000, function(){
-				if ( $("[id$='toggle']").text() == "FadeToggleIn")
+		$("[id$='down']").click(function(){
+			$("#fade_demo").slideDown(2000, function(){
+				if ( $("[id$='toggle']").text() == "SlideToggleDown")
 				{
-					$("[id$='toggle']").text("FadeToggleOut")
+					$("[id$='toggle']").text("SlideToggleUp")
 				}
 				else
 				{
-					$("[id$='toggle']").text("FadeToggleIn")
+					$("[id$='toggle']").text("SlideToggleUp")
 				}
 			});			
 		});
 		
 		$("[id$='toggle']").click(function(){
-			$("#fade_demo").fadeToggle(2000, function(){
-				if ( $("[id$='toggle']").text() == "FadeToggleOut")
+			$("#fade_demo").slideToggle(2000, function(){
+				if ( $("[id$='toggle']").text() == "SlideToggleUp")
 				{
-					$("[id$='toggle']").text("FadeToggleIn")
+					$("[id$='toggle']").text("SlideToggleDown")
 				}
 				else
 				{
-					$("[id$='toggle']").text("FadeToggleOut")
+					$("[id$='toggle']").text("SlideToggleUp")
 				}
 			});			
-		});
-		
-		$("[id$='to20']").click(function(){
-			$("#fade_demo").fadeTo(2000, 0.2);
-		});
-		
-		$("[id$='to100']").click(function(){
-			$("#fade_demo").fadeTo(2000, 1);
 		});
 	});
 </script>
