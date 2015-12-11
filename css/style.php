@@ -342,6 +342,7 @@ a:hover
 {
 	float:right;
 	width: 72%;
+	border: 1px solid red;
 }
 
 #dev-home-container a
