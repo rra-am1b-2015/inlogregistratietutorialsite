@@ -67,8 +67,6 @@
 						   .attr("alt", "Sneeuwluipaard");
 		});
 		
-		var animalArray = ["./images/snowleopard.jpg" : "Sneeuwluipaard", 
-						   "./images/dwerghamster.jpg" : "Russische Dwerghamster"];
 		
 	});
 
