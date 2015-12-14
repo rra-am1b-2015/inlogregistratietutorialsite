@@ -4,6 +4,8 @@
 	Animate Me!
 </div>
 
+<button id="btn_animate">Start Animatie!</button>
+
 
 <script>
 	$("document").ready(function(){
@@ -17,9 +19,32 @@
 					   position			:	"relative",
 					   top				:	"10px",
 					   left				:	"0%"};
+		var animationTime = 500;
 		
-		$("#animation_demo").css(divCSS).animate({left : "500px"}, 2000, function(){
-			//alert("Ik ben er!");
-		}).animate({top : "40px"}, 2000);;
+		var animationLeft = {left : "600px"};
+		
+		var animationDown = {top : "250px"};
+		
+		var animationRight = {left : "0px"};
+		
+		var animationUp = { top : "10px"};
+		
+		$("#animation_demo")
+			.css(divCSS)
+			.animate(animationLeft,
+					 3 * animationTime, 
+					 function(){ 
+						$(this).animate(animationDown,
+							animationTime, function() {
+								  $(this).animate(animationRight, 
+										animationTime, function(){
+											  $(this).animate(animationUp, animationTime, function(){
+																	
+																				 });
+																			
+											  });
+								  });									 
+					 });
+										
 	});
 </script>

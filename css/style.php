@@ -342,7 +342,8 @@ a:hover
 {
 	float:right;
 	width: 72%;
-	border: 1px solid red;
+	border: 0px solid red;
+	min-height: 300px;
 }
 
 #dev-home-container a
@@ -380,6 +381,17 @@ a:hover
 	background-color: rgb(225, 225,225);
 	width: 60px;
 	float:left;
+}
+
+
+[id="btn_animate"]
+{
+	padding: 0.5em;
+	font-size: 2em;
+	color: rgba(0,0,0, 0.6);
+	border-radius: 0.3em;
+	margin-top: 2em;
+	box-shadow: 10px 10px 5px rgba(120,120,120, 0.8);
 }
 
 
