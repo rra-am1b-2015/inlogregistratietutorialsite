@@ -384,14 +384,14 @@ a:hover
 }
 
 
-[id="btn_animate"]
+[id^="btn_animate"]
 {
 	padding: 0.5em;
 	font-size: 2em;
 	color: rgba(0,0,0, 0.6);
 	border-radius: 0.3em;
 	margin-top: 2em;
-	box-shadow: 10px 10px 5px rgba(120,120,120, 0.8);
+	//box-shadow: 10px 10px 5px rgba(120,120,120, 0.8);
 }
 
 

@@ -5,6 +5,7 @@
 </div>
 
 <button id="btn_animate">Start Animatie!</button>
+<button id="btn_animate_stop">Stop Animatie!</button>
 
 
 <script>
@@ -38,7 +39,7 @@
 		
 		var animationRight = {left : "0px",
 							  borderRadius: "2em",
-							  backgroundColor: "pink"};
+							  backgroundColor: "red"};
 		
 		var animationUp = { top : "10px",
 							borderRadius: "0em",
@@ -46,12 +47,12 @@
 		
 		$("#animation_demo").css(divCSS);
 		
-		$("[id^='btn_']").click(function(){
+		$("[id='btn_animate']").click(function(){
 		$("#animation_demo")
 			.animate(animationLeft,
 					 3 * animationTime, 
 					 function(){ 
-						$(this).animate(animationDown,
+						$(this).delay(10000).animate(animationDown,
 							animationTime, function() {
 								  $(this).animate(animationRight, 
 										3 * animationTime, function(){
@@ -64,7 +65,17 @@
 					 });
 	});
 		
-										
+	
+	$("#btn_animate_stop").click(function(){
+		$("#animation_demo").stop(true, false);
+	});	
+	
+	$("[id^='btn_animate']").hover(function(){ 
+		$(this).css("box-shadow", "10px 10px 5px rgba(120,120,120, 0.8)");
+	}, function(){
+		
+	});
+		
 	});
 	
 	
