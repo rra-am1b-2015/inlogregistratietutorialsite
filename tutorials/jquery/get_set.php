@@ -1,5 +1,6 @@
 <h4>JQuery Get & Set</h4>
 <p>Deze tekst wordt <b>gewijzigd</b> wanneer je op de onderstaande knop drukt</p>
+
 <button id="veranderTekst">Verander tekst</button>
 
 <br><br>
@@ -20,18 +21,33 @@
 		
 		$("#veranderTekst").click(function(){
 			//alert("Hallo");
-			$("p").html("Dit is wat nieuwe tekst <b>die</b> de vorige tekst heeft vervangen");		
+			$("p").html("Dit is wat nieuwe tekst <b>die</b> de vorige tekst heeft vervangen");
 		});
 		
 		var htmlTekst = $("p").html();
 		//alert(htmlTekst);
-		$("p").html("Dit is wat gewijzigde tekst met <i>html markup</i>");
+		//$("p").html("Dit is wat gewijzigde tekst met <i>html markup</i>");
 		console.log(htmlTekst);
 		
 		$("[type=submit]").click(function(){
-			alert("Hallo!");
+			//alert("Hallo!");
 			var getal = $("[type=number]").val();
-			alert(getal);
+			//alert(getal);
+			if ( getal < 18)
+			{
+				$("p").html("Je bent <b><i><u>minderjarig</u></i></b>, de site zal worden aangepast aan je leeftijd!");
+				$("[type=number]").val("");
+				$("form").on("submit", function()
+				{
+					return false;
+				});
+				
+			}
+			else
+			{
+				$("p").html("Je bent volwassen, de content wordt aangepast aan je leeftijd!");
+				$("[type=number]").val("");
+			}
 		});
 		
 		
