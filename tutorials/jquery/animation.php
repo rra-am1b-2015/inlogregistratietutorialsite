@@ -30,7 +30,7 @@
 							 borderRadius: "2em",
 							 backgroundColor: "yellow"};
 		
-		var animationDown = {top : "250px",
+		var animationDown = {top : "300px",
 							 width: "100px",
 							 height: "100px",
 							 fontSize : "1.4em",
@@ -52,7 +52,7 @@
 			.animate(animationLeft,
 					 3 * animationTime, 
 					 function(){ 
-						$(this).delay(10000).animate(animationDown,
+						$(this).delay(1000).animate(animationDown,
 							animationTime, function() {
 								  $(this).animate(animationRight, 
 										3 * animationTime, function(){
@@ -70,10 +70,16 @@
 		$("#animation_demo").stop(true, false);
 	});	
 	
+	var btn_animation_on = { boxShadow : "10 10 10px rgba(120, 120, 120, 0.5)"};
+	
+	var btn_animation_off = { boxShadow : "0 0 0px rgba(120, 120, 120, 0.5)"};
+	
+	
 	$("[id^='btn_animate']").hover(function(){ 
-		$(this).css("box-shadow", "10px 10px 5px rgba(120,120,120, 0.8)");
+		//$(this).css("box-shadow", "10px 10px 5px rgba(120,120,120, 0.8)");
+		$(this).animate(btn_animation_on, 100);
 	}, function(){
-		
+		$(this).animate(btn_animation_off, 100);
 	});
 		
 	});

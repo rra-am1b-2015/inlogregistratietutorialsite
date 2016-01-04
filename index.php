@@ -8,6 +8,8 @@
  	<link rel="stylesheet" media="(max-width:800px; )" type="text/css" href="css/style-mobile.css">
 	<script src="./jquery/jquery-2.1.4.js"></script>
 	<script src="./jquery/jquery-ui-1.11.4.custom/jquery-ui.js"></script>
+	<script src="./jquery/jquery.animate-shadow.js"></script>
+	
 	<!--<script src="./jquery/jquery-2.1.4.min.js"></script>-->
 	<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>-->
  </head>
