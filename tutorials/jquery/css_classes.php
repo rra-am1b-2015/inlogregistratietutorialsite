@@ -40,9 +40,6 @@
 		$("#opmaakEven").click(function(){
 			var allRows = $("tr:even");
 			allRows.addClass("even");		
-		});
-		
-	
-	
+		});	
 	});
 </script>
