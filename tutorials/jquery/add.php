@@ -9,6 +9,8 @@
 
 <button id="append-prepend">Toevoegen extra tekst</button>
 <button id="after">Voeg extra &lt;li&gt; toe na laatste element</button>
+<button id="before">Voeg extra &lt;li&gt; toe voor eerste element</button>
+
 
 <script>
 	$(document).ready(function(){
@@ -30,11 +32,15 @@
 		$("#after").click(function(){
 			var allListItems = $("li");
 			var lastListItem = allListItems.last();
-			lastListItem.after("<li>Bentley Silver Shadow</li>");
-		
+			lastListItem.after("<li>Bentley Silver Shadow</li>");		
 		});
 		
-		
+		$("#before").click(function(){
+			if ($("li").first().text() != "Daihutsu Core Sport Edition")
+			{
+				$("li").first().before("<li>Daihutsu Core Sport Edition</li>");
+			}
+		});
 	});
 </script>
 
