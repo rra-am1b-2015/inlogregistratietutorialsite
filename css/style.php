@@ -394,6 +394,23 @@ a:hover
 	//box-shadow: 10px 10px 5px rgba(120,120,120, 0.8);
 }
 
+#table
+{
+	border-collapse:collapse;
+}
+
+#table th, #table td
+{
+	border: 2px solid grey;
+	padding: 1em;
+}
+
+.even
+{
+	background-color: rgb(167, 224, 130);
+	color: white;	
+}
+
 
 
 

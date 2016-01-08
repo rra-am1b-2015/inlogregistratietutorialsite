@@ -26,6 +26,12 @@
 				$(this).text("Klikken heeft geen zin meer!");
 			}	
 		});
+		
+		$("#empty").click(function(){
+			$("ul").empty());
+			alert("Niet meer klikken, geen <li> meer over");
+			$(this).text("Klikken heeft geen zin meer!");
+		});
 	});
 
 </script>

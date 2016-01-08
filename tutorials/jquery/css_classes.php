@@ -1,0 +1,48 @@
+<table id="table">
+	<tr>
+		<th>id</th>
+		<th>voornaam</th>
+		<th>tussenvoegsel</th>
+		<th>achternaam</th>	
+	</tr>
+	<tr>
+		<td>1</td>
+		<td>Arjan</td>
+		<td>de</td>
+		<td>Ruijter</td>
+		
+	</tr>
+	<tr>
+		<td>2</td>
+		<td>Fred</td>
+		<td>de</td>
+		<td>Beer</td>
+	</tr>
+	<tr>
+		<td>3</td>
+		<td>Johnny</td>
+		<td>van</td>
+		<td>Leersum</td>
+	</tr>
+	<tr>
+		<td>4</td>
+		<td>Bert</td>
+		<td>van</td>
+		<td>Leeghwater</td>
+	</tr>
+</table>
+
+<button id="opmaakEven">Geef alle even rijen een opmaak</button>
+
+
+<script>
+	$("document").ready(function(){
+		$("#opmaakEven").click(function(){
+			var allRows = $("tr:even");
+			allRows.addClass("even");		
+		});
+		
+	
+	
+	});
+</script>
