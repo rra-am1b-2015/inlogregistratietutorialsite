@@ -7,12 +7,12 @@
 	<li>Ford</li>
 </ul>
 
-<button>Toevoegen extra tekst</button>
-<button id="after">Toevoegen extra tekst</button>
+<button id="append-prepend">Toevoegen extra tekst</button>
+<button id="after">Voeg extra &lt;li&gt; toe na laatste element</button>
 
 <script>
 	$(document).ready(function(){
-		$("button").click(function(){
+		$("#append-prepend").click(function(){
 			var auto = $("li").first();
 			auto.append(" mijn favoriete automerk");
 			auto.prepend("Als ik echt moet kiezen is ");
@@ -25,6 +25,13 @@
 					listItems.eq(i).append(", is het beste automerk");
 				}
 			}
+		});
+		
+		$("#after").click(function(){
+			var allListItems = $("li");
+			var lastListItem = allListItems.last();
+			lastListItem.after("<li>Bentley Silver Shadow</li>");
+		
 		});
 		
 		
