@@ -417,6 +417,42 @@ a:hover
 	color: white;
 }
 
+.tblHeader
+{
+	background-color: rgb(113, 116, 117);
+	color: white;
+}
+
+.button
+{
+	width: 200px;
+	
+	border-radius:15px;
+	padding:0.5em;
+	font-size:2em;
+}
+
+.trHover
+{
+	background-color: rgb(255, 182, 0);
+	color: white;
+	font-weight: bold;
+	font-size: 1.1em;
+}
+
+.trToggle
+{
+	color: yellow;
+	font-weight: bold;
+	font-size: 1.3em;
+}
+
+button:focus 
+{
+	outline:0;
+}
+
+
 
 
 

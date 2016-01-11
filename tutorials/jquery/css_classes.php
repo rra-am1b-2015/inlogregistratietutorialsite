@@ -32,15 +32,30 @@
 	</tr>
 </table>
 
-<button id="opmaak">Geef alle even rijen een opmaak</button>
+<button id="opmaak">Opmaak even rijen</button>
+<button id="toggleOpmaak">Toggle opmaak rijen</button>
 
 
 <script>
 	$("document").ready(function(){
-		$("#opmaak").click(function(){
-			$("tr:even:not()").addClass("even");
-			$("tr:odd").addClass("odd");
-		});
+		$("button").addClass("button");
 		
+		
+		$("#opmaak").click(function(){
+			$("tr:even:not(tr:first)").addClass("even");
+			$("tr:odd").addClass("odd");
+			$("tr:first").addClass("tblHeader");
+			
+			$("tr:not(tr:first)").hover(function(){
+			$(this).addClass("trHover");
+			},
+			function(){
+				$(this).removeClass("trHover");
+			});
+		});
+
+		$("#toggleOpmaak").click(function(){
+			$("tr:first").toggleClass("trToggle");
+		});
 	});
 </script>
