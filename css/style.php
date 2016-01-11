@@ -426,7 +426,7 @@ a:hover
 .button
 {
 	width: 200px;
-	
+	margin-top:1em;
 	border-radius:15px;
 	padding:0.5em;
 	font-size:2em;
@@ -450,6 +450,11 @@ a:hover
 button:focus 
 {
 	outline:0;
+}
+
+.parCSSClass
+{
+	background-color: rgba(220,200,200,1);
 }
 
 
