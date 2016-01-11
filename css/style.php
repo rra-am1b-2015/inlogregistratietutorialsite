@@ -411,6 +411,12 @@ a:hover
 	color: white;	
 }
 
+.odd
+{
+	background-color: rgb(101, 193, 205);
+	color: white;
+}
+
 
 
 

@@ -13,6 +13,7 @@
 
 <script>
 	$("document").ready(function(){
+		
 		$("#remove").click(function(){
 			var listItems = $("li");
 			if ( listItems.length != 0)
@@ -28,9 +29,9 @@
 		});
 		
 		$("#empty").click(function(){
-			$("ul").empty());
+			$("ul").empty();
 			alert("Niet meer klikken, geen <li> meer over");
-			$(this).text("Klikken heeft geen zin meer!");
+			$(this).text("Klikken heeft geen zin meer!");			
 		});
 	});
 

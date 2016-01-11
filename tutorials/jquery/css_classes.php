@@ -32,14 +32,15 @@
 	</tr>
 </table>
 
-<button id="opmaakEven">Geef alle even rijen een opmaak</button>
+<button id="opmaak">Geef alle even rijen een opmaak</button>
 
 
 <script>
 	$("document").ready(function(){
-		$("#opmaakEven").click(function(){
-			var allRows = $("tr:even");
-			allRows.addClass("even");		
-		});	
+		$("#opmaak").click(function(){
+			$("tr:even:not()").addClass("even");
+			$("tr:odd").addClass("odd");
+		});
+		
 	});
 </script>
