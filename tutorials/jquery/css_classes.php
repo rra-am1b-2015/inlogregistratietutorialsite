@@ -33,7 +33,7 @@
 </table>
 
 <button id="opmaak">Opmaak even rijen</button>
-<button id="toggleOpmaak">Toggle opmaak rijen</button>
+<button id="toggleOpmaak">Toggle opmaak header AAN</button>
 
 
 <script>
@@ -56,6 +56,15 @@
 
 		$("#toggleOpmaak").click(function(){
 			$("tr:first").toggleClass("trToggle");
+			
+			if ( $(this).text() == "Toggle opmaak header AAN")
+			{
+				$(this).text("Toggle opmaak header UIT");
+			}
+			else
+			{
+				$(this).text("Toggle opmaak header AAN");
+			}
 		});
 	});
 </script>
