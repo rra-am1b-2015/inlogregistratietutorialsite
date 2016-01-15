@@ -29,7 +29,7 @@
 								padding: "50px",
 								fontSize: "2em",
 								border: "10px dashed green",
-								margin: "50px"};
+								margin: "100px"};
 			
 			$("#par_css").css(jsObjectCSS);
 			
