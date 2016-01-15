@@ -9,3 +9,4 @@
 <a href='index.php?content=developer_homepage&topic=jquery&page=tutorials/jquery/css_classes'>JQuery CSS classes</a>
 <a href='index.php?content=developer_homepage&topic=jquery&page=tutorials/jquery/css'>JQuery CSS</a>
 <a href='index.php?content=developer_homepage&topic=jquery&page=tutorials/jquery/ancestors'>JQuery Ancestors</a>
+<a href='index.php?content=developer_homepage&topic=jquery&page=tutorials/jquery/descendents'>JQuery Descendents</a>
