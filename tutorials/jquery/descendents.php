@@ -22,6 +22,9 @@
 
 <button id="btn_descendent">Klik hier</button>
 
+<p>Klik hier om alle listitems te vinden op de gehele pagina en de border te veranderen</p>
+<button id="btn_find">Klik hier</button>
+
 <script>
 	$("document").ready(function(){
 		$("ul").css("list-style-type", "none");
@@ -32,7 +35,8 @@
 											 width 			 : "150px"});
 		});
 		
-		
-		$()
+		$("#btn_find").click(function(){
+			$("html").find("a").css({ border : "5px solid purple", backgroundColor : "yellow" });
+		});
 	});
 </script>
