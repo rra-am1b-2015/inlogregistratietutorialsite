@@ -11,6 +11,9 @@
 <p>Geef alle p-tags tot en met het voorlaatste p-tage, na het tweede p-tag, een border met een gele rand en een oranje achtergrond met de method nextUntil()</p>
 <button id="btn_nextuntil" class="button">Klik hier!</button>
 
+<p>Verander de border en margin van de p-tags gebruik prev()</p>
+<button id="btn_prev" class="button">Klik hier!</button>
+
 <div>
 	<ul id="tel">
 		<li>een</li>
@@ -72,6 +75,23 @@
 		});
 			  
 		
+		// 1) Maak een selector voor het laatste p tag
+		// 2) Zet deze selector onder een button
+		// 3) Door herhaaldelijk te klikken op de button wordt er een border en margin om ieder p-tag
+		//		gezet dat boven de laatste p-tag staat
+		// 4) Gebruik hiervoor de method prev();
+		
+		var pObj = $("p:last");
+		//var tekstGrootte = parseFloat(liObj.css("font-size"));
+		$("#btn_prev").click(function(){
+			pObj.css({margin : "1em", border : "2px solid grey"});
+			pObj = pObj.prev();
+		});
+		
+		setInterval(function(){ 
+			pObj.css({margin : "1em", border : "2px solid grey"});
+			pObj = pObj.prev();
+		}, 100);
 		
 		
 	});

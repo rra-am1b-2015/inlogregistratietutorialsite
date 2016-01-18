@@ -11,3 +11,4 @@
 <a href='index.php?content=developer_homepage&topic=jquery&page=tutorials/jquery/ancestors'>JQuery Ancestors</a>
 <a href='index.php?content=developer_homepage&topic=jquery&page=tutorials/jquery/descendents'>JQuery Descendents</a>
 <a href='index.php?content=developer_homepage&topic=jquery&page=tutorials/jquery/siblings'>JQuery Siblings</a>
+<a href='index.php?content=developer_homepage&topic=jquery&page=tutorials/jquery/filtering'>JQuery Filtering</a>
