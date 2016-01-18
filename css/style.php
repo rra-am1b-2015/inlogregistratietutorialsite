@@ -426,10 +426,13 @@ a:hover
 .button
 {
 	width: 200px;
-	margin-top:1em;
+	color: white;
+	margin:0.5em;
 	border-radius:15px;
 	padding:0.5em;
-	font-size:2em;
+	font-size:1.2em;
+	outline: 0;
+	font-weight: bold;
 }
 
 .trHover
@@ -447,10 +450,8 @@ a:hover
 	font-size: 1.3em;
 }
 
-button:focus 
-{
-	outline:0;
-}
+
+
 
 .parCSSClass
 {
