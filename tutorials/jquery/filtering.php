@@ -6,6 +6,7 @@
 <button id="rmEverthingButFri" class="button">Verwijder vrijdag</button>
 <button id="rmID" class="button">Verwijder maandag met ID</button>
 <button id="daysOfWeek" class="button">Dagen van de week...</button>
+<button id="notWednesday" class="button">Rand om dagen behalve woensdag</button>
 
 
 <ol>
@@ -70,16 +71,28 @@
 	// 2) Na iedere seconde verschijnt de volgende tekst.
 	
 	$("#daysOfWeek").click(function(){
+		var textSize = 1;
 		$("li").each(function(){
-			var test = this
-			setTimeout(function(){var day = $(test).text(); $("#daysOfWeek").text(day);}, 1000);
+			$(this).css({ fontSize : textSize + "em"});
+			textSize += 0.5;
 			/*
+			var test = this
+			setTimeout(function()
+					   {	
+							var day = $(test).text();
+							$("#daysOfWeek").text(day);}, 5000);
+			
 			setTimeout(function(){
 				var day = $(this).text();
 				$("#daysOfWeek").text(day);
 			}, 1000)});
 			*/
-		});
+		});	
 	});
 	
+	$("#notWednesday").click(function(){
+			$("li").not($("li").eq(2)).css( { border : "10px solid yellow",
+											  margin : "1em" });
+		
+	});
 </script>
