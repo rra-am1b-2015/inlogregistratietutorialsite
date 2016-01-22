@@ -1,0 +1,1 @@
+<a href='index.php?content=developer_homepage&topic=jquery_ui&page=tutorials/jquery_ui/datepicker'>jQuery UI Datepicker</a>
