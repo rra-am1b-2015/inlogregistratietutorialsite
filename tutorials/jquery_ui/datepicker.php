@@ -7,22 +7,50 @@ Kalender element: <input type="text" id="datepicker" />
 
 <script>
 	$(document).ready(function(){
+		/*****************************************
+		 * Vraag de datum op met JavaScript
+		 *
+		 *****************************************/
+		var datepickerDate = new Date();
+		var day = datepickerDate.getDate();
+		var month = datepickerDate.getMonth();
+		month += 1;
+		var year = datepickerDate.getFullYear();
+		var date = day + "-" + month + "-" + year;
 		
-		// De datepicker
+		/*****************************************
+		 * Maak een javascript object met options
+		 * de datepicker widget.
+		 *****************************************/
+		
 		var datepickerProperties = { dateFormat : "dd-mm-yy",
 									 dayNamesMin : [ "zo", "ma", "di", "wo", "do", "vr", "za"],
 									 changeYear	: true,
 									 yearRange	: "1900:2030"};
 		
+		/*****************************************
+		 * Pas de instellingen toe
+		 *
+		 *****************************************/
 		$("#datepicker").datepicker(datepickerProperties);
 		
-		$("#changeDatepicker").click(function(){		
-			var firstday = $("#datepicker").datepicker("option", "firstDay");
-			alert("option firstday = " + firstday);
-			$("#datepicker").datepicker("option", "firstDay", 1);
-			var firstday = $("#datepicker").datepicker("option", "firstDay");
-			alert("option firstday = " + firstday);
-			$("#datepicker").datepicker("option", "changeMonth", true);
+		/*****************************************
+		 * Zet de datum van vandaag in het tekstvak
+		 * van de datepicker
+		 *****************************************/
+		$("#datepicker").datepicker("setDate", date);
+		
+		/*****************************************
+		 * Verander door het klikken op de button  
+		 * instellingen van de datepicker
+		 *****************************************/
+		$("#changeDatepicker").click(function(){
+
+			var changeOptions = { firstDay		: 1,
+								  changeMonth	: true,
+								  monthNamesShort: ["jan", "feb", "maa", "apr", "mei", "jun", "jul", "aug", "sep", "okt", "nov", "dec"]};
+								  
+			$("#datepicker").datepicker("option", changeOptions);
 			
 		});
 	
