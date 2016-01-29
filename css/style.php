@@ -137,7 +137,7 @@ a
 {
 	text-decoration:none;
 	color:orange;
-	font-weight: bold;
+	//font-weight: bold;
 }
 
 #userrole_link a
@@ -148,7 +148,7 @@ a
 
 a:hover
 {
-	font-size:13.6px;
+	//font-size:13.6px;
 }
 
 /*
@@ -333,7 +333,7 @@ a:hover
 #dev-home-container nav
 {
 	float:left;
-	width:18%;
+	width:20%;
 	color:black;
 	
 }
@@ -341,7 +341,7 @@ a:hover
 #dev-home-container section
 {
 	float:right;
-	width: 72%;
+	width: 70%;
 	border: 0px solid red;
 	min-height: 300px;
 }

@@ -25,6 +25,7 @@
 
 <script>
 	$("document").ready(function(){
+		var accordionProperties = { };
 		$("#accordion").accordion();
 	});
 </script>

@@ -54,3 +54,19 @@
 		?>
 	<section>
 </div> 
+
+<script>
+	$("document").ready(function(){
+		$("#accordion_links").accordion({ heightStyle	: "content",
+										  active		: 3,
+										  activate		: function(event, ui){
+											var panelState = $("#accordion_links").accordion("option", "active");
+											//alert("Hallo dan, panel nr: "  + panelState + " is geselecteerd!");
+											document.cookie="panelState=" + panelState;
+										  }});
+										  
+		var panelState = $("#accordion_links").accordion("option", "active");
+		//alert(panelState);
+		
+	});
+</script>
