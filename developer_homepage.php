@@ -56,16 +56,32 @@
 </div> 
 
 <script>
+	function getCookie(cname) {
+		var name = cname + "=";
+		var ca = document.cookie.split(';');
+		for(var i=0; i<ca.length; i++) {
+			var c = ca[i];
+			while (c.charAt(0)==' ') c = c.substring(1);
+			if (c.indexOf(name) == 0) return c.substring(name.length,c.length);
+		}
+		return "";
+	}
+
 	$("document").ready(function(){
 		$("#accordion_links").accordion({ heightStyle	: "content",
-										  active		: 3,
+										  create		: function(event, ui){
+															//alert("create Event: panelState= " + getCookie("panelState"));
+															var statePanel = parseInt(getCookie("panelState"));
+															$("#accordion_links").accordion("option", "active", statePanel);
+														  },
 										  activate		: function(event, ui){
-											var panelState = $("#accordion_links").accordion("option", "active");
-											//alert("Hallo dan, panel nr: "  + panelState + " is geselecteerd!");
-											document.cookie="panelState=" + panelState;
-										  }});
+															var panelState = $("#accordion_links").accordion("option", "active");
+															//alert("Hallo dan, panel nr: "  + panelState + " is //geselecteerd!");
+															document.cookie="panelState=" + panelState;
+														  }
+										});
 										  
-		var panelState = $("#accordion_links").accordion("option", "active");
+		//var panelState = $("#accordion_links").accordion("option", "active");
 		//alert(panelState);
 		
 	});
