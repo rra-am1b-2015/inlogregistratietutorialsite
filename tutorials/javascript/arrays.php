@@ -10,6 +10,7 @@
 	 *********************************************************************/
 	 
 	var car = ["Mercedes", "BMW", "Fiat", "Ferrari", "Lamborghini", "Daf"];
+	var matrix = ["100110", "110011", "111100", "001100", "101010", "111100"];
 	var par1 = document.getElementById("ptag");
 	var arraySize = car.length;
 	//par1.innerHTML = car[arraySize-1];
@@ -19,9 +20,9 @@
 	function showArray()
 	{
 		var tekst = "";
-		for ( var i = 0; i < arraySize; i++)
+		for ( var i = 0; i < matrix.length; i++)
 		{
-			tekst += car[i] + "<br>";
+			tekst += matrix[i] + "<br>";
 		}		
 		par1.innerHTML = tekst;
 	}
@@ -29,8 +30,18 @@
 	btn = document.getElementById("btn_array");
 	
 	btn.addEventListener("click", function(){
+		var verwijdertElement = matrix.pop();
+		matrix.unshift(verwijdertElement);
+		//alert("Het laatste array-element: " + verwijdertElement + " is uit het array gehaald");
 		showArray();	
 	});
+	
+	setInterval(function(){
+		var verwijdertElement = matrix.pop();
+		matrix.unshift(verwijdertElement);
+		//alert("Het laatste array-element: " + verwijdertElement + " is uit het array gehaald");
+		showArray();	
+	}, 200);
 	
 	btn.onmouseover = function(){
 		//alert("Er is onmouseover gebruikt in een script");
