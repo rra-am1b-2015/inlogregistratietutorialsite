@@ -3,7 +3,7 @@
 <p><textarea id="reviewTxt">
 </textarea></p>
 <p id="showReviews"></p>
-<button id="btnReview">Sla je review op</button>
+<button id="btnReview">Laat reviews zien</button>
 
 <script>
 	var cssTxtArea = { width : "200px",
