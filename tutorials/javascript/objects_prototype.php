@@ -46,14 +46,30 @@
 				
 	console.log(eersteGame.showInfo(58.90));
 	
+	// Maak een handle voor de button
 	var btnRev = document.getElementById("btnReview");
+	
+	// Voeg een event toe aan de button
 	btnRev.onclick = function(){
-		//alert("Klik");
-		var txtarea = document.getElementById("reviewTxt").value;
-		//alert(txtarea);
-		document.getElementById("reviewTxt").value = "";
-		eersteGame.reviews.unshift(txtarea);
 		
+		// Verander de tekst op de knop
+		if ( btnRev.innerHTML == "Laat reviews zien")
+		{
+			btnRev.innerHTML = "Voeg review toe";
+		}
+		
+		// Haal de tekst in de textarea op
+		var txtarea = document.getElementById("reviewTxt").value;
+		
+		// Als de tekstarea geen tekst bevat, doe niets...
+		if ( txtarea != "")
+		{
+			document.getElementById("reviewTxt").value = "";
+			eersteGame.reviews.unshift(txtarea);
+		}
+		
+		// Lees het array reviews uit het object uit en stop de waarden in een string. 
+		// Beeld deze af in een p-tag op de pagina
 		var txt = "";
 		for (var i=0; i<eersteGame.reviews.length; i++)
 		{
