@@ -14,7 +14,7 @@
  * 4) Je mag in de JSON string geen enter opnemen.
  */
 
-var jsonTextString = '{ "firstname" : "Arjan", "infix" : "de", "lastname" : "Ruijter", "leeftijd" : 47, "favorieteKleuren" : [ "geel", "groen", "blauw" ] }';
+var jsonTextString = '{ "firstname" : "Arjan", "infix" : "de", "lastname" : "Ruijter", "leeftijd" : 47, "favorieteKleuren" : [ "geel", "groen", "blauw" ], "opleiding" : { "llnr" : "109321", "naamOpleiding" : "Applicatie- en Mediaontwikkeling" } }';
 
 var jsObject = JSON.parse(jsonTextString);
 
@@ -27,6 +27,8 @@ var txtName = "Mijn naam is: " + jsObject.firstname + " " + jsObject.infix +  " 
 	{
 		txtName += jsObject.favorieteKleuren[i] + "<br>";
 	}
+	txtName += "Mijn leerlingnummer is: " + jsObject.opleiding.llnr + "<br>";
+	txtName += "De naam van mijn opleiding is: " + jsObject.opleiding.naamOpleiding;
 
 document.getElementById("nameFromJSON").innerHTML = txtName;
 
