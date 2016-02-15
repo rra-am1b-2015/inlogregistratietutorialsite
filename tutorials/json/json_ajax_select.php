@@ -1,27 +1,20 @@
-<p><h4>Mijn eerste JSON string</h4></p>
+<p><h4>Toepassing JSON string voor select tag</h4></p>
 
-<p id="nameFromJSON">Hier komt mijn naam te staan en wat persoonlijke gegevens</p>
+<!-- Wanneer er op het select tag geclickt wordt, haalt het xmlhttp object alle voornamen asychroon
+	dus zonder de pagina te verversen binnen. Deze voornamen zijn te lezen in de select lijst. -->
 
-<button id="btn_JSON" class="button">Geef volledige naam weer</button>
+<select id="ajax_select">
+	<option>Arjan</option>
+	<option>Frans</option>
+	<option>Bert</option>
 
+</select>
 <script>
 
 
 
-/* 1) JSON is een string
- * 2) Een JSON string heeft <naam> : <waarde> paren gescheiden door een dubbele punt.
- * 3) De <naam> moet door dubbele quotes omgeven worden. De <waarde> hoeft dat niet.
- * 4) Je mag in de JSON string geen enter opnemen.
- */
-
- 
-
-
-/*
-*/
-
 document.getElementById("btn_JSON").onclick = function(){
-	
+	// Maak een handvat op het select tag
 	 var xmlhttp = new XMLHttpRequest();
  
 	 xmlhttp.onreadystatechange = function(){
