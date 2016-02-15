@@ -1,6 +1,6 @@
 <p><h4>Mijn eerste JSON string</h4></p>
 
-<p id="nameFromJSON">Hier komt mijn naam te staan</p>
+<p id="nameFromJSON">Hier komt mijn naam te staan en wat persoonlijke gegevens</p>
 
 <button id="btn_JSON" class="button">Geef volledige naam weer</button>
 
@@ -30,9 +30,8 @@ var txtName = "Mijn naam is: " + jsObject.firstname + " " + jsObject.infix +  " 
 	txtName += "Mijn leerlingnummer is: " + jsObject.opleiding.llnr + "<br>";
 	txtName += "De naam van mijn opleiding is: " + jsObject.opleiding.naamOpleiding;
 
-document.getElementById("nameFromJSON").innerHTML = txtName;
-
-
-
+document.getElementById("btn_JSON").onclick = function(){
+	document.getElementById("nameFromJSON").innerHTML = txtName;
+};
 
 </script>
