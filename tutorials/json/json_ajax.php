@@ -6,19 +6,12 @@
 
 <script>
 
-
-
 /* 1) JSON is een string
  * 2) Een JSON string heeft <naam> : <waarde> paren gescheiden door een dubbele punt.
  * 3) De <naam> moet door dubbele quotes omgeven worden. De <waarde> hoeft dat niet.
  * 4) Je mag in de JSON string geen enter opnemen.
  */
 
- 
-
-
-/*
-*/
 
 document.getElementById("btn_JSON").onclick = function(){
 	

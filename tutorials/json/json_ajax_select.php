@@ -4,16 +4,16 @@
 	dus zonder de pagina te verversen binnen. Deze voornamen zijn te lezen in de select lijst. -->
 
 <select id="ajax_select">
+	<option>-- voornamen --</option>
 	<option>Arjan</option>
 	<option>Frans</option>
 	<option>Bert</option>
-
 </select>
 <script>
 
 
 
-document.getElementById("btn_JSON").onclick = function(){
+document.getElementById("btn_JSON").onchange = function(){
 	// Maak een handvat op het select tag
 	 var xmlhttp = new XMLHttpRequest();
  
