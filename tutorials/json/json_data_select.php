@@ -1,6 +1,6 @@
 <?php
 	include("../../db_connect.php");
-	$query = "SELECT `firstname`, `infix` FROM `users`";	
+	$query = "SELECT `firstname`, `infix`, `lastname` FROM `users`";	
 	$result = mysqli_query($conn, $query);	
 	
 	$numberOfFirstnames = mysqli_num_rows($result);
@@ -35,7 +35,25 @@
 		}
 		$counter++;
 	}
+	
+	$output .= '], "lastname" : [';
+	$counter = 1;
+	mysqli_data_seek($result, 0);
+	while ( $record = mysqli_fetch_assoc($result))
+	{
+		
+		if ($counter < $numberOfFirstnames)
+		{
+			$output .= "\"".$record["lastname"]."\", ";
+		}
+		else
+		{
+			$output .= "\"".$record["lastname"]."\"";
+		}
+		$counter++;
+	}
 	$output .= ']}';
+	
 	
 	
 	echo $output;

@@ -24,7 +24,9 @@ document.getElementById("ajax_select").onmouseover = function(){
 			 var output = "";
 			 for ( var i = 0; i < jsObject.firstname.length; i++)
 			 {
-				output += "<option>" + jsObject.firstname[i] + " " + jsObject.infix[i] +"</option>";
+				output += "<option>" + jsObject.firstname[i] + 
+								 " " + jsObject.infix[i] +
+								 " " + jsObject.lastname[i] +"</option>";
 			 }		 
 			 
 			 //document.write(output);
