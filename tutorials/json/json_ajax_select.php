@@ -40,6 +40,7 @@
 	};
 
 	document.getElementById("ajax_select").onchange = function(){
+		
 		 var selectTag = document.getElementById("ajax_select");
 		 var obj = selectTag.options[selectTag.selectedIndex];
 		 
@@ -47,17 +48,16 @@
 				"<input type='text' value='" + obj.text + "' />";
 			
 		xmlhttp.onreadystatechange = function(){
-		 if ( xmlhttp.readyState == 4 && xmlhttp.status == 200)
-		 {
-			 //alert(xmlhttp.responseText);
-			 var jsObject = JSON.parse(xmlhttp.responseText);
-			 alert(jsObject);			 
-		 }	 
-	 }
-		
-				
+			 if ( xmlhttp.readyState == 4 && xmlhttp.status == 200)
+			 {
+				 //alert(xmlhttp.responseText);
+				 var jsObject = JSON.parse(xmlhttp.responseText);
+				 document.getElementById("showSelection").innerHTML = "voornaam: <input type='text' value='" + jsObject.firstname + "'><br>tussenvoegsel: <input type='text' value='" + jsObject.infix + "'><br>achternaam: <input type='text' value='" + jsObject.lastname + "'><br>emailadres: <input type='text' value='" + jsObject.email + "'><br>gebruikersrol: <input type='text' value='" + jsObject.userrole + "'><br>geactiveerd: <input type='text' value='" + jsObject.activation + "'>";			 
+			 }	 
+		}				
 		xmlhttp.open("post", "http://localhost/am1b/inlogregistratietutorialsite-master/tutorials/json/json_data_update.php", true);
-		xmlhttp.send("id=" + obj.option);
+		xmlhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+		xmlhttp.send("id=" + obj.index);
 	 };
 	
 </script>
