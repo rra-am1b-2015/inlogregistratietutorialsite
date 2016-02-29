@@ -1,12 +1,26 @@
 <?php
 	include("../../db_connect.php");
-	$query = "SELECT `firstname`, `infix`, `lastname` FROM `users`";	
+	$query = "SELECT `id`, `firstname`, `infix`, `lastname` FROM `users`";	
 	$result = mysqli_query($conn, $query);	
 	
 	$numberOfFirstnames = mysqli_num_rows($result);
-
 	$counter = 1;
-	$output = '{ "firstname" : [ ';
+	$output = '{ "id" : [ ';
+	while ( $record = mysqli_fetch_assoc($result))
+	{
+		if ($counter < $numberOfFirstnames)
+		{
+			$output .= "\"".$record["id"]."\", ";
+		}
+		else
+		{
+			$output .= "\"".$record["id"]."\"";
+		}
+		$counter++;
+	}
+	$output .= '], "firstname" : [';
+	mysqli_data_seek($result, 0);
+	$counter = 1;
 	while ( $record = mysqli_fetch_assoc($result))
 	{
 		if ($counter < $numberOfFirstnames)

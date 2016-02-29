@@ -5,14 +5,13 @@
 
 	<select id="ajax_select" style="width:200px;">
 	</select>
+	
+	<p id="showSelection"></p>
 <script>
 
+	var xmlhttp = new XMLHttpRequest();
 
-
-document.getElementById("ajax_select").onmouseover = function(){
-
-	 // Maak een handvat op het select tag	
-	 var xmlhttp = new XMLHttpRequest();
+	document.getElementById("ajax_select").onmouseover = function(){	 
  
 	 xmlhttp.onreadystatechange = function(){
 		 //alert(xmlhttp.readyState + " | " + xmlhttp.status);
@@ -21,10 +20,10 @@ document.getElementById("ajax_select").onmouseover = function(){
 			 //alert(xmlhttp.responseText);
 			 var jsObject = JSON.parse(xmlhttp.responseText);
 			 
-			 var output = "";
+			 var output = "<option>--kies een user--</option>";
 			 for ( var i = 0; i < jsObject.firstname.length; i++)
 			 {
-				output += "<option>" + jsObject.firstname[i] + 
+				output += "<option value=" + jsObject.id[i] + ">" + jsObject.firstname[i] + 
 								 " " + jsObject.infix[i] +
 								 " " + jsObject.lastname[i] +"</option>";
 			 }		 
@@ -32,11 +31,33 @@ document.getElementById("ajax_select").onmouseover = function(){
 			 //document.write(output);
 			 
 			 document.getElementById("ajax_select").innerHTML = output;
-			
+			 
+			 
 		 }	 
 	 }
-	 xmlhttp.open("post", "http://localhost/am1b/inlogregistratietutorialsite-master/tutorials/json/json_data_select.php", true);
-	 xmlhttp.send();	 
-};
+		 xmlhttp.open("post", "http://localhost/am1b/inlogregistratietutorialsite-master/tutorials/json/json_data_select.php", true);
+		 xmlhttp.send();
+	};
 
+	document.getElementById("ajax_select").onchange = function(){
+		 var selectTag = document.getElementById("ajax_select");
+		 var obj = selectTag.options[selectTag.selectedIndex];
+		 
+		 document.getElementById("showSelection").innerHTML = 
+				"<input type='text' value='" + obj.text + "' />";
+			
+		xmlhttp.onreadystatechange = function(){
+		 if ( xmlhttp.readyState == 4 && xmlhttp.status == 200)
+		 {
+			 //alert(xmlhttp.responseText);
+			 var jsObject = JSON.parse(xmlhttp.responseText);
+			 alert(jsObject);			 
+		 }	 
+	 }
+		
+				
+		xmlhttp.open("post", "http://localhost/am1b/inlogregistratietutorialsite-master/tutorials/json/json_data_update.php", true);
+		xmlhttp.send("id=" + obj.option);
+	 };
+	
 </script>
