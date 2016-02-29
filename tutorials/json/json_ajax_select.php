@@ -24,7 +24,7 @@ document.getElementById("ajax_select").onmouseover = function(){
 			 var output = "";
 			 for ( var i = 0; i < jsObject.firstname.length; i++)
 			 {
-				output += "<option>" + jsObject.firstname[i] + "</option>";
+				output += "<option>" + jsObject.firstname[i] + " " + jsObject.infix[i] +"</option>";
 			 }		 
 			 
 			 //document.write(output);
@@ -33,7 +33,7 @@ document.getElementById("ajax_select").onmouseover = function(){
 			
 		 }	 
 	 }
-	 xmlhttp.open("POST", "http://localhost/am1b/inlogregistratietutorialsite-master/tutorials/json/json_data_select.php", true);
+	 xmlhttp.open("post", "http://localhost/am1b/inlogregistratietutorialsite-master/tutorials/json/json_data_select.php", true);
 	 xmlhttp.send();	 
 };
 
