@@ -52,7 +52,8 @@
 			 {
 				 //alert(xmlhttp.responseText);
 				 var jsObject = JSON.parse(xmlhttp.responseText);
-				 document.getElementById("showSelection").innerHTML = "voornaam: <input type='text' value='" + jsObject.firstname + "'><br>tussenvoegsel: <input type='text' value='" + jsObject.infix + "'><br>achternaam: <input type='text' value='" + jsObject.lastname + "'><br>emailadres: <input type='text' value='" + jsObject.email + "'><br>gebruikersrol: <input type='text' value='" + jsObject.userrole + "'><br>geactiveerd: <input type='text' value='" + jsObject.activation + "'>";			 
+				 document.getElementById("showSelection").innerHTML = 
+				 "voornaam: <input type='text' value='" + jsObject.firstname + "'><br>tussenvoegsel: <input type='text' value='" + jsObject.infix + "'><br>achternaam: <input type='text' value='" + jsObject.lastname + "'><br>emailadres: <input type='text' value='" + jsObject.email + "'><br>gebruikersrol: <input type='text' value='" + jsObject.userrole + "'><br>geactiveerd: <input type='text' value='" + jsObject.activation + "'>";			 
 			 }	 
 		}				
 		xmlhttp.open("post", "http://localhost/am1b/inlogregistratietutorialsite-master/tutorials/json/json_data_update.php", true);
