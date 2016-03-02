@@ -4,6 +4,7 @@
 	 dus zonder de pagina te verversen binnen. Deze voornamen zijn te lezen in de select lijst. -->
 
 	<select id="ajax_select" style="width:200px;">
+		<option>--kies een user--</option>
 	</select>
 	
 	<p id="showSelection"></p>
@@ -55,10 +56,15 @@
 			 if ( xmlhttp.readyState == 4 && xmlhttp.status == 200)
 			 {
 				 //alert(xmlhttp.responseText);
+				 // Vul de select lijst met alle namen.
 				 var jsObject = JSON.parse(xmlhttp.responseText);
 				 document.getElementById("showSelection").innerHTML = 				 
 				 "<input type='hidden' id='id' value='" + jsObject.id + "'>voornaam: <input type='text' id='firstname' value='" + jsObject.firstname + "'><br>tussenvoegsel: <input type='text' id='infix' value='" + jsObject.infix + "'><br>achternaam: <input type='text' id='lastname' value='" + jsObject.lastname + "'><br>emailadres: <input type='text' id='email' value='" + jsObject.email + "'><br>gebruikersrol: <input type='text' id='userrole' value='" + jsObject.userrole + "'><br>geactiveerd: <input type='text' id='activated' value='" + jsObject.activation + "'>";
 				 document.getElementById('btn_update').style.visibility = 'visible';
+				 
+				 // Maak het option tage --maak een keuze-- weer actief
+				 var selectTag = document.getElementById("ajax_select");
+				 selectTag.options[0].selected = true;
 			 }	 
 		}				
 		xmlhttp.open("post", "http://localhost/am1b/inlogregistratietutorialsite-master/tutorials/json/json_data_update.php", true);
@@ -75,15 +81,13 @@
 			 var email = document.getElementById('email').value;
 			 var userrole = document.getElementById('userrole').value;
 			 var activated = document.getElementById('activated').value;
-			 
-			 
+			 			alert("Hoi"); 
 			 xmlhttp.onreadystatechange = function(){
 			 
 			 if ( xmlhttp.readyState == 4 && xmlhttp.status == 200)
 			 {
-				 alert(xmlhttp.responseText);
-				 //var jsObject = JSON.parse(xmlhttp.responseText);
-				 		 
+				
+				
 			 }	 
 		}				
 		xmlhttp.open("post", "http://localhost/am1b/inlogregistratietutorialsite-master/tutorials/json/json_data_update.php", true);

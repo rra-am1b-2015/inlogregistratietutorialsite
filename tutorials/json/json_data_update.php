@@ -3,22 +3,36 @@
 	
 	if ( count($_POST) == 1 )
 	{
-	$query = "SELECT * FROM `users` WHERE `id` = '".$_POST["id"]."'";	
-	$result = mysqli_query($conn, $query);	
-	
-	$record = mysqli_fetch_assoc($result);
-	
+		$query = "SELECT * FROM `users` WHERE `id` = '".$_POST["id"]."'";	
+		$result = mysqli_query($conn, $query);	
+		
+		$record = mysqli_fetch_assoc($result);
+		
 
-	
-	echo '{"firstname" : "'.$record["firstname"].'", '.
-		  '"infix" : "'.$record["infix"].'", '.
-		  '"lastname" : "'.$record["lastname"].'", '.
-		  '"email" : "'.$record["email"].'", '.
-		  '"activation" : "'.$record["activation"].'", '.
-		  '"userrole" : "'.$record["userrole"].'"}';
+		
+		echo '{"id" : "'.$record["id"].'", '.
+			   '"firstname" : "'.$record["firstname"].'", '.
+			   '"infix" : "'.$record["infix"].'", '.
+			   '"lastname" : "'.$record["lastname"].'", '.
+			   '"email" : "'.$record["email"].'", '.
+			   '"activation" : "'.$record["activation"].'", '.
+			   '"userrole" : "'.$record["userrole"].'"}';
 	}
 	else
 	{
-		echo "Hallo";
+		
+		$query = "UPDATE `users`
+				  SET `firstname` = '".$_POST["firstname"]."',
+					  `infix` = '".$_POST["infix"]."',
+					  `lastname` = '".$_POST["lastname"]."',
+					  `activation` = '".$_POST["activated"]."',
+					  `userrole` = '".$_POST["userrole"]."',
+					  `email` = '".$_POST["email"]."'
+					  WHERE `id` = ".$_POST["id"].";";
+				  
+		$result = mysqli_query($conn, $query);
+		
+		echo "De update heeft plaatsgevonden!";
+		
 	}
 ?>
