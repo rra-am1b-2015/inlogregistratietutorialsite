@@ -9,10 +9,12 @@
 	
 	<p id="showSelection"></p>
 	<button id='btn_update' >Opslaan wijziging</button>
+	<button id='btn_delete' >Delete record</button>
 
 	
 <script>
 	document.getElementById('btn_update').style.visibility = 'hidden';
+	document.getElementById('btn_delete').style.visibility = 'hidden';
 	
 	var xmlhttp = new XMLHttpRequest();
 
@@ -59,8 +61,18 @@
 				 // Vul de select lijst met alle namen.
 				 var jsObject = JSON.parse(xmlhttp.responseText);
 				 document.getElementById("showSelection").innerHTML = 				 
-				 "<input type='hidden' id='id' value='" + jsObject.id + "'>voornaam: <input type='text' id='firstname' value='" + jsObject.firstname + "'><br>tussenvoegsel: <input type='text' id='infix' value='" + jsObject.infix + "'><br>achternaam: <input type='text' id='lastname' value='" + jsObject.lastname + "'><br>emailadres: <input type='text' id='email' value='" + jsObject.email + "'><br>gebruikersrol: <input type='text' id='userrole' value='" + jsObject.userrole + "'><br>geactiveerd: <input type='text' id='activated' value='" + jsObject.activation + "'>";
+				 "<input type='hidden' id='id' value='" + jsObject.id + "'>voornaam: <input type='text' id='firstname' value='" + jsObject.firstname + "'><br>tussenvoegsel: <input type='text' id='infix' value='" + jsObject.infix + "'><br>achternaam: <input type='text' id='lastname' value='" + jsObject.lastname + "'><br>emailadres: <input type='text' id='email' value='" + jsObject.email + "'><br>gebruikersrol: " + 
+				 
+				 "<select id='userrole'>" + 
+				 "<option>" + jsObject.userrole + "</option>" + 
+				 "<option>administrator</option>" +
+				 "<option>developer</option>" +
+				 "<option>customer</option>" +
+				 "<option>root</option>" +
+				 "</select><br>" + 
+				 "geactiveerd: <input type='text' id='activated' value='" + jsObject.activation + "'>";
 				 document.getElementById('btn_update').style.visibility = 'visible';
+				 document.getElementById('btn_delete').style.visibility = 'visible';
 				 
 				 // Maak het option tage --maak een keuze-- weer actief
 				 var selectTag = document.getElementById("ajax_select");
@@ -69,7 +81,7 @@
 		}				
 		xmlhttp.open("post", "http://localhost/am1b/inlogregistratietutorialsite-master/tutorials/json/json_data_update.php", true);
 		xmlhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-		xmlhttp.send("id=" + obj.index);
+		xmlhttp.send("id=" + obj.value + "&action=select");
 	 };
 	 
 	 document.getElementById('btn_update').onclick = function()
@@ -98,9 +110,27 @@
 					 "&lastname=" + lastname + 
 					 "&email=" + email + 
 					 "&userrole=" + userrole + 
-					 "&activated=" + activated);
+					 "&activated=" + activated +
+					 "&action=update");
 		
 	 }
 	 
+	 document.getElementById('btn_delete').onclick = function()
+	 {
+			 var id = document.getElementById('id').value;
+			 
+			 xmlhttp.onreadystatechange = function(){
+			 
+			 if ( xmlhttp.readyState == 4 && xmlhttp.status == 200)
+			 {
+				
+				
+			 }	 
+		}				
+		xmlhttp.open("post", "http://localhost/am1b/inlogregistratietutorialsite-master/tutorials/json/json_data_update.php", true);
+		xmlhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+		xmlhttp.send("id=" + id + "&action=delete");
+		
+	 }
 	
 </script>

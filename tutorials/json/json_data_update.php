@@ -1,7 +1,7 @@
 <?php
 	include("../../db_connect.php");
 	
-	if ( count($_POST) == 1 )
+	if ( $_POST["action"] == "select" )
 	{
 		$query = "SELECT * FROM `users` WHERE `id` = '".$_POST["id"]."'";	
 		$result = mysqli_query($conn, $query);	
@@ -18,7 +18,15 @@
 			   '"activation" : "'.$record["activation"].'", '.
 			   '"userrole" : "'.$record["userrole"].'"}';
 	}
-	else
+	else if ( $_POST["action"] == "delete")
+	{
+		$query = "DELETE FROM `users` WHERE `id` = '".$_POST["id"]."'";
+		
+		mysqli_query($conn, $query);
+		
+	}
+	
+	else 
 	{
 		
 		$query = "UPDATE `users`
