@@ -1,0 +1,32 @@
+/* Dit is de dezelfde manier van uitcommentarieren als bij PHP
+ * Je kunt ook de // gebruiken voor een regel uitcommentarieren
+ *
+ */
+
+ @borderThickness: 15px * @scale;
+@borderStyle: solid;
+//@border: @borderThickness @borderStyle @borderColor;
+@borderNextLevel: 20px solid green;
+@radius: .5em * @scale;
+@backgroundColor: RGB(255,127,0); 
+@tekstColor: white;
+@parPadding: .5em * @scale		;
+@fontSize: 2em *@scale;
+@scale: 1;
+@width: 60%;
+@marginTop: 0.5em;
+
+
+
+#lessExample
+{
+	
+	border: @borderThickness solid darken(@backgroundColor, 20%);
+	border-radius: @radius;
+	background-color: @backgroundColor;
+	color: lighten(@backgroundColor, 40%);
+	padding: @parPadding;
+	font-size: @fontSize;
+	width: @width;
+	margin-top: @marginTop;
+}

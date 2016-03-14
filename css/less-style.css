@@ -1,0 +1,14 @@
+/* Dit is de dezelfde manier van uitcommentarieren als bij PHP
+ * Je kunt ook de // gebruiken voor een regel uitcommentarieren
+ *
+ */
+#lessExample {
+  border: 15px solid #994c00;
+  border-radius: 0.5em;
+  background-color: #ff7f00;
+  color: #ffe5cc;
+  padding: 0.5em;
+  font-size: 2em;
+  width: 60%;
+  margin-top: 0.5em;
+}
