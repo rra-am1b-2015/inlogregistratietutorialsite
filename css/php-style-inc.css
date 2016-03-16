@@ -1,24 +1,21 @@
-#user
-{
-	border:1px solid RGBA(138, 192, 7, 1);
-	padding:8px;
-	margin-top:15px;
-	border-bottom-left-radius:0px;
-	border-bottom-right-radius:0px;
-	border-top-left-radius:12px;
-	border-top-right-radius:12px;
-	text-align:left;
-	background-color:RGBA(245,245,245, 1);
-	color: grey
+#user {
+  border: 1px solid #8ac007;
+  padding: 8px;
+  margin-top: 15px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  text-align: left;
+  background-color: #f5f5f5;
+  color: #808080;
 }
-
-#userrole_link
-{
-	border:1px solid RGBA(138, 192, 7, 1);
-	padding:6px;
-	border-bottom-left-radius:12px;
-	border-bottom-right-radius:12px;
-	text-align:center;
-	background-color: rgba(101, 193, 205, 1);
-	color: white;
+#userrole_link {
+  border: 1px solid #8ac007;
+  padding: 6px;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+  text-align: center;
+  background-color: #65c1cd;
+  color: white;
 }

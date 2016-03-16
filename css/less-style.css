@@ -2,13 +2,17 @@
  * Je kunt ook de // gebruiken voor een regel uitcommentarieren
  *
  */
-#lessExample {
-  border: 15px solid #994c00;
-  border-radius: 0.5em;
+.commonSettingsHeaderFooter {
+  font-size: 25px;
   background-color: #ff7f00;
-  color: #ffe5cc;
-  padding: 0.5em;
-  font-size: 2em;
-  width: 60%;
-  margin-top: 0.5em;
+  border: 1px solid #663300;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  font-weight: bold;
+}
+.formStyle {
+  border: 0px solid black;
+  border-collapse: collapse;
+  padding: 5px;
 }

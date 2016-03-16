@@ -3,16 +3,14 @@
 
 Maak 3 divjes onder elkaar. Geef ieder divje een andere kleur  met css en id's
 
-<section id="end">
+<div id="end">
 		<div id='div_1'>
 			1
 		</div>
 		<div id='div_2'>
 			2
 		</div>	
-		<div id="clearBoth">
-			clearboth voorbeeld
-		</div>
+		
 		<div id='div_3'>
 			3
 		</div>
@@ -65,4 +63,4 @@ Maak 3 divjes onder elkaar. Geef ieder divje een andere kleur  met css en id's
 			18
 		</div>
 		<!--<br id="end">-->
-</section>
+</div>

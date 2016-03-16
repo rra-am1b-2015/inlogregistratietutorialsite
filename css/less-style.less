@@ -2,8 +2,13 @@
  * Je kunt ook de // gebruiken voor een regel uitcommentarieren
  *
  */
+ 
+@footBanBackgroundColor: rgb(255, 127, 0); //#EAF3F3;
+@roundedCorners: 24px;
+ 
+ 
 
- @borderThickness: 15px * @scale;
+@borderThickness: 15px * @scale;
 @borderStyle: solid;
 //@border: @borderThickness @borderStyle @borderColor;
 @borderNextLevel: 20px solid green;
@@ -14,19 +19,33 @@
 @fontSize: 2em *@scale;
 @scale: 1;
 @width: 60%;
-@marginTop: 0.5em;
+@marginTop: 1.5em;
 
+// Hieronder worden wat mixins gedefinieerd
 
-
-#lessExample
+.commonSettingsHeaderFooter
 {
-	
-	border: @borderThickness solid darken(@backgroundColor, 20%);
-	border-radius: @radius;
-	background-color: @backgroundColor;
-	color: lighten(@backgroundColor, 40%);
-	padding: @parPadding;
-	font-size: @fontSize;
-	width: @width;
-	margin-top: @marginTop;
+	font-size:25px;
+	background-color: @footBanBackgroundColor; //RGB(255,127,0);
+	border: 1px solid darken(@footBanBackgroundColor, 30%);
+	color:white;
+	text-align:center;
+	padding:10px;
+	font-weight:bold;
+}
+
+.formStyle
+{
+	border: 0px solid black;
+	border-collapse: collapse;
+	padding:5px;
+}
+
+// mixin met parameters
+.roundedCornersProps (@topLeft, @topRight, @bottomLeft, @bottomRight)
+{
+	border-bottom-left-radius: @bottomLeft;
+	border-bottom-right-radius: @bottomRight;
+	border-top-left-radius: @topLeft;
+	border-top-right-radius: @topRight;
 }
