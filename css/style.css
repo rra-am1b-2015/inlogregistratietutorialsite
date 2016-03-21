@@ -357,3 +357,51 @@ div#end #end {
 #nestedRule li:last-child {
   background-color: yellow;
 }
+#patMatch {
+  background-color: #e8e8e8;
+  color: #292929;
+  border-style: solid;
+  border-width: 5px;
+  border-color: #65c1cd;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  padding: 1em;
+  margin: 1em 1em 1em 0em;
+}
+/*
+// Guarded Mixin
+.guardedMixin(@backgroundGuardedMixinColor) when (lightness(@backgroundGuardedMixinColor) < 80%)
+{
+	background-color: lighten(@backgroundGuardedMixinColor, 20%);
+	color: lighten(@siteGreyColor, 20%);
+}
+.guardedMixin(@backgroundGuardedMixinColor) when (lightness(@backgroundGuardedMixinColor) >= 80%)
+{
+	background-color: darken(@backgroundGuardedMixinColor, 10%);
+	color: lighten(@siteGreyColor, 80%);
+}
+.guardedMixin(@_)
+{
+	border: 3px solid darken(@siteGreyColor, 80%);
+	border-radius: 0.5em;
+	margin: 1em 1em 1em 0em;
+	padding: 1em;
+	//color: darken(@siteGreyColor, 80%);
+}
+
+#guardedMixin
+{
+	.guardedMixin(@footBanBackgroundColor + #111);
+}
+*/
+#guardedMixin {
+  background-color: #ffc37f;
+  color: #ffffff;
+  font-size: 3em;
+  border: 3px solid #292929;
+  border-radius: 0.5em;
+  margin: 1em 1em 1em 0em;
+  padding: 1em;
+}

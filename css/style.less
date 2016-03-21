@@ -451,6 +451,96 @@ div#end
 	}
 }
 
+@state: slow;					// normal 80% 20%, busy 60% 80%, slow 5% 80%
+@backgroundColorPercentage: 5%;
+@textColorPercentage: 80%;
+
+
+.customPatMatch(normal, @percentageBckgrClr, @txtColorPercentage)
+{
+	background-color: darken(@siteGreyColor, @percentageBckgrClr);
+	color: lighten(@siteGreyColor, @txtColorPercentage);
+	
+}
+.customPatMatch(busy, @percentageBckgrClr, @txtColorPercentage)
+{
+	background-color: lighten(@siteGreyColor, @percentageBckgrClr);
+	color: darken(@siteGreyColor, @txtColorPercentage);
+	
+}
+.customPatMatch(slow, @percentageBckgrClr, @txtColorPercentage)
+{
+	background-color: darken(@siteGreyColor, @percentageBckgrClr);
+	color: darken(@siteGreyColor, @txtColorPercentage);
+}
+.customPatMatch(@_, @_, @_)
+{
+	border-style: solid;
+	border-width: 5px;
+	border-color: @userrolelinkColor;
+	.roundedCornersProps(10px, 10px, 10px, 10px);
+	padding: 1em;
+	margin: 1em 1em 1em 0em;
+}
+
+#patMatch
+{
+	.customPatMatch(@state, @backgroundColorPercentage, @textColorPercentage);
+}
+
+/*
+// Guarded Mixin
+.guardedMixin(@backgroundGuardedMixinColor) when (lightness(@backgroundGuardedMixinColor) < 80%)
+{
+	background-color: lighten(@backgroundGuardedMixinColor, 20%);
+	color: lighten(@siteGreyColor, 20%);
+}
+.guardedMixin(@backgroundGuardedMixinColor) when (lightness(@backgroundGuardedMixinColor) >= 80%)
+{
+	background-color: darken(@backgroundGuardedMixinColor, 10%);
+	color: lighten(@siteGreyColor, 80%);
+}
+.guardedMixin(@_)
+{
+	border: 3px solid darken(@siteGreyColor, 80%);
+	border-radius: 0.5em;
+	margin: 1em 1em 1em 0em;
+	padding: 1em;
+	//color: darken(@siteGreyColor, 80%);
+}
+
+#guardedMixin
+{
+	.guardedMixin(@footBanBackgroundColor + #111);
+}
+*/
+@test: 5;
+
+.guardedMixin(@backgroundGuardedMixinColor) when (isnumber(@test)) and ( @test < 10)
+{
+	background-color: lighten(@backgroundGuardedMixinColor, 20%);
+	color: lighten(@siteGreyColor, 20%);
+	font-size: 3em;
+}
+.guardedMixin(@backgroundGuardedMixinColor) when (isnumber(@test)) and ( @test >= 10 )
+{
+	background-color: darken(@backgroundGuardedMixinColor, 10%);
+	color: lighten(@siteGreyColor, 80%);
+	font-size: 1em;
+}
+.guardedMixin(@_)
+{
+	border: 3px solid darken(@siteGreyColor, 80%);
+	border-radius: 0.5em;
+	margin: 1em 1em 1em 0em;
+	padding: 1em;
+	//color: darken(@siteGreyColor, 80%);
+}
+
+#guardedMixin
+{
+	.guardedMixin(@footBanBackgroundColor + #111);
+}
 
 
 
