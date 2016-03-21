@@ -35,7 +35,7 @@ body
 
 #content
 {
-	background-color: RGB(245,245,245);
+	background-color: @siteGreyColor;
 	border:1px solid RGB(138, 192, 7);
 	.roundedCornersProps (@roundedCorners, @roundedCorners, @roundedCorners, @roundedCorners);
 	color:RGB(24, 24, 24);
@@ -52,6 +52,7 @@ body
 	border-bottom-left-radius:12px;
 	border-bottom-right-radius:12px;
 	text-align:center;
+	background-color: @siteGreyColor;
 }
 
 #user_img
@@ -265,42 +266,43 @@ div#end
 	overflow:hidden;
 }
 
-
-#dev-home-container nav
+#dev-home-container
 {
-	background-color:rgba(200, 200, 200, 1);
-	border-radius:6px;
-	padding:2%;
-	margin: 0.5%;
-	padding-bottom: 1000em;
-	margin-bottom: -998em;
-}
-
-#dev-home-container nav
-{
-	float:left;
-	width:20%;
-	color:black;
+	nav
+	{
+		background-color:darken(@siteGreyColor, 8%);
+		border-radius:6px;
+		padding:2%;
+		margin: 0.5%;
+		padding-bottom: 1000em;
+		margin-bottom: -998em;
+	}
 	
-}
+	nav
+	{
+		float:left;
+		width:20%;
+		color:black;
+		
+	}
+	
+	section
+	{
+		float:right;
+		width: 70%;
+		border: 0px solid red;
+		min-height: 300px;
+	}
 
-#dev-home-container section
-{
-	float:right;
-	width: 70%;
-	border: 0px solid red;
-	min-height: 300px;
+	a
+	{
+		color: darken(@siteGreyColor, 50%);
+		//border:1px solid black;
+		display:block;
+		text-align:right;
+		padding:0.3em;
+	}
 }
-
-#dev-home-container a
-{
-	color:grey;
-	//border:1px solid black;
-	display:block;
-	text-align:right;
-	padding:0.3em;
-}
-
 
 #btn_1, #btn_2, .btn_3, .btn_4, .btn_5
 {

@@ -1,5 +1,23 @@
+/* Dit is de dezelfde manier van uitcommentarieren als bij PHP
+ * Je kunt ook de // gebruiken voor een regel uitcommentarieren
+ *
+ */
+.commonSettingsHeaderFooter {
+  font-size: 25px;
+  background-color: #ff7f00;
+  border: 1px solid #8aac07;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  font-weight: bold;
+}
+.formStyle {
+  border: 0px solid black;
+  border-collapse: collapse;
+  padding: 5px;
+}
 #user {
-  border: 1px solid #8ac007;
+  border: 1px solid #8aac07;
   padding: 8px;
   margin-top: 15px;
   border-bottom-left-radius: 0px;
@@ -11,7 +29,7 @@
   color: #808080;
 }
 #userrole_link {
-  border: 1px solid #8ac007;
+  border: 1px solid #8aac07;
   padding: 6px;
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;
