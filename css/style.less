@@ -522,7 +522,13 @@ div#end
 	color: lighten(@siteGreyColor, 20%);
 	font-size: 3em;
 }
-.guardedMixin(@backgroundGuardedMixinColor) when (isnumber(@test)) and ( @test >= 10 )
+.guardedMixin(@backgroundGuardedMixinColor) when (isnumber(@test)) and ( @test >= 10) and ( @test < 20)
+{
+	background-color: lighten(@backgroundGuardedMixinColor, 20%);
+	color: lighten(@siteGreyColor, 20%);
+	font-size: 0.5em;
+}
+.guardedMixin(@backgroundGuardedMixinColor) when (isnumber(@test)) and ( @test >= 20 )
 {
 	background-color: darken(@backgroundGuardedMixinColor, 10%);
 	color: lighten(@siteGreyColor, 80%);
@@ -540,6 +546,41 @@ div#end
 #guardedMixin
 {
 	.guardedMixin(@footBanBackgroundColor + #111);
+}
+
+// HSL kleurdefinitie
+
+@kleur: rgb(255, 127, 0);
+@test3: 24em;
+@test32: get-unit(@test3);
+.hslMixin() when ( @test32 = em) 
+{
+	background-color: hsla(hue(@kleur), 100%, 50%, 100%);
+	border-style: solid;
+	border-width: 10px;
+	border-color: hsla(hue(@kleur), 100%, 40%, 100%);
+	border-radius: e(replace("1px", "px", @test32));
+	padding: 8em;
+	margin: 1em 1em 1em 0em;
+	color: darken(rgb(255, 255, 255), 30%);
+	font-size: 1.3em;
+}
+.hslMixin() when ( @test32 = px) 
+{
+	background-color: hsla(hue(@kleur), 100%, 50%, 100%);
+	border-style: solid;
+	border-width: 10px;
+	border-color: hsla(hue(@kleur), 100%, 40%, 100%);
+	border-radius: e(replace("1px", "px", @test32));
+	padding: 2em;
+	margin: 1em 1em 1em 0em;
+	color: darken(rgb(255, 255, 255), 30%);
+	font-size: 1.3em;
+}
+
+#hslDef
+{
+	.hslMixin
 }
 
 

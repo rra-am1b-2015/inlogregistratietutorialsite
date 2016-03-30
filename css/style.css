@@ -405,3 +405,14 @@ div#end #end {
   margin: 1em 1em 1em 0em;
   padding: 1em;
 }
+#hslDef {
+  background-color: #ff8000;
+  border-style: solid;
+  border-width: 10px;
+  border-color: #cc6600;
+  border-radius: replace("1px", "px", get-unit(24em));
+  padding: 2em;
+  margin: 1em 1em 1em 0em;
+  color: #b3b3b3;
+  font-size: 1.3em;
+}

@@ -5,7 +5,6 @@
 <br><br>
 <hr>
 <pre>
-// Guarded mixin met LESS
 @test: 5;
 
 .guardedMixin(@backgroundGuardedMixinColor) when (isnumber(@test)) and ( @test < 10)
@@ -14,7 +13,13 @@
 	color: lighten(@siteGreyColor, 20%);
 	font-size: 3em;
 }
-.guardedMixin(@backgroundGuardedMixinColor) when (isnumber(@test)) and ( @test >= 10 )
+.guardedMixin(@backgroundGuardedMixinColor) when (isnumber(@test)) and ( @test >= 10) and ( @test < 20)
+{
+	background-color: lighten(@backgroundGuardedMixinColor, 20%);
+	color: lighten(@siteGreyColor, 20%);
+	font-size: 0.5em;
+}
+.guardedMixin(@backgroundGuardedMixinColor) when (isnumber(@test)) and ( @test >= 20 )
 {
 	background-color: darken(@backgroundGuardedMixinColor, 10%);
 	color: lighten(@siteGreyColor, 80%);

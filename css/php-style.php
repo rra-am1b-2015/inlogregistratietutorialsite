@@ -4,6 +4,6 @@
 
  if (isset($_SESSION["id"]))
  {
-	include("./php-style-inc.css");
+	include("./php-style-inc.less");
  }
 ?>
