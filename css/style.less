@@ -16,20 +16,20 @@ body
 #container
 {
 	border:0px solid green;
-	width:80%;
+	width:50%;
 	margin:20px auto;
 	background-color: RGB(255,255,255);
 }
 
 #banner
 {
-	.roundedCornersProps (@roundedCorners, @roundedCorners, 0px, 0px);
+	.roundedCornersProps(@roundedCorners, @roundedCorners, 0px, 0px);
 	.commonSettingsHeaderFooter
 }
 
 #footer
 {
-	.roundedCornersProps (0px, 0px, @roundedCorners, @roundedCorners);
+	.roundedCornersProps(0px, 0px, @roundedCorners, @roundedCorners);
 	.commonSettingsHeaderFooter
 }
 
@@ -37,7 +37,7 @@ body
 {
 	background-color: @siteGreyColor;
 	border:1px solid RGB(138, 192, 7);
-	.roundedCornersProps (@roundedCorners, @roundedCorners, @roundedCorners, @roundedCorners);
+	.roundedCornersProps(@roundedCorners, @roundedCorners, @roundedCorners, @roundedCorners);
 	color:RGB(24, 24, 24);
 	padding:2em;
 	margin:15px 0px;
@@ -584,6 +584,24 @@ div#end
 }
 
 
+@counter: 1;
 
+.loop(@counter) when (@counter =< 5)
+{
+    .loop(@counter + 1);
+  #div-@{counter}
+    {
+        border: (5px * @counter) solid black;
+        margin-top: 1em + @counter * 0.2em;
+        padding: 1em + (@counter * 0.2em);
+        background-color: #F94 + (#002 * @counter);
+        font-family: Verdana;
+        font-size: 1em + (0.2em * @counter); 
+        border-radius: 0.5em + (0.2em * @counter);       
+    } 
+}
 
-
+#looping
+{   
+     .loop(@counter);   
+}
