@@ -1,0 +1,14 @@
+#phpLessCompiler {
+  background-color: #ff7f00;
+  border: 1.4em solid #663300;
+  border-radius: 1.4em;
+  margin: 1.4em;
+  padding: 1.4em;
+  font-size: 1.4em;
+  font-weight: bold;
+  color: #ffffff;
+  font: Verdana;
+}
+#phpLessCompiler li {
+  margin-left: 1.4em;
+}

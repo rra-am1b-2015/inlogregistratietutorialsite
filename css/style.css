@@ -1,15 +1,4 @@
-/*
-#register input, #login input
-{
-	padding:5px;
-	width:200px;
-}
-
-*/
-/* Dit is de dezelfde manier van uitcommentarieren als bij PHP
- * Je kunt ook de // gebruiken voor een regel uitcommentarieren
- *
- */
+@import url("./css/less-style.less");
 .commonSettingsHeaderFooter {
   font-size: 25px;
   background-color: #ff7f00;
@@ -34,9 +23,9 @@ body {
 }
 #container {
   border: 0px solid green;
-  width: 80%;
+  width: 50%;
   margin: 20px auto;
-  background-color: #ffffff;
+  background-color: RGB(255,255,255);
 }
 #banner {
   border-bottom-left-radius: 0px;
@@ -65,23 +54,23 @@ body {
   font-weight: bold;
 }
 #content {
-  background-color: #f5f5f5;
-  border: 1px solid #8ac007;
+  background-color: #F5F5F5;
+  border: 1px solid RGB(138,192,7);
   border-bottom-left-radius: 24px;
   border-bottom-right-radius: 24px;
   border-top-left-radius: 24px;
   border-top-right-radius: 24px;
-  color: #181818;
+  color: RGB(24,24,24);
   padding: 2em;
   margin: 15px 0px;
 }
 #link {
-  border: 1px solid #8ac007;
+  border: 1px solid RGBA(138,192,7,1);
   padding: 6px;
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;
   text-align: center;
-  background-color: #f5f5f5;
+  background-color: #F5F5F5;
 }
 #user_img {
   float: right;
@@ -112,14 +101,6 @@ body {
   padding: 5px;
   width: 200px;
 }
-/*
-#register input, #login input
-{
-	padding:5px;
-	width:200px;
-}
-
-*/
 #register input[type=submit],
 #login input[type=submit] {
   width: 214px;
@@ -132,15 +113,6 @@ a {
   text-decoration: none;
   color: #edf5f5;
 }
-/*
-#clearBoth
-{
-	background-color: rgba(200, 200, 200, 1);
-	height:20px;
-	width:20%;
-	clear:both;
-	float:left;
-}*/
 div#end #div_1 {
   background-color: yellow;
   float: left;
@@ -262,7 +234,7 @@ div#end #end {
   padding: 10px;
   font-size: 1.2em;
   font-weight: bold;
-  color: rgba(10, 10, 10, 0.5);
+  color: rgba(10,10,10,0.5);
   width: 200px;
   float: left;
 }
@@ -280,7 +252,7 @@ div#end #end {
 [id^="btn_animate"] {
   padding: 0.5em;
   font-size: 2em;
-  color: rgba(0, 0, 0, 0.6);
+  color: rgba(0,0,0,0.6);
   border-radius: 0.3em;
   margin-top: 2em;
 }
@@ -334,7 +306,7 @@ div#end #end {
   background-color: #ff7f00;
   color: #ffe5cc;
   padding: 0.5em;
-  font-size: 2em;
+  font-size: 2em * 1;
   width: 60%;
   margin-top: 1.5em;
 }
@@ -358,11 +330,11 @@ div#end #end {
   background-color: yellow;
 }
 #patMatch {
-  background-color: #e8e8e8;
+  background-color: #f5f5f5;
   color: #292929;
   border-style: solid;
   border-width: 5px;
-  border-color: #65c1cd;
+  border-color: #65C1CD;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
   border-top-left-radius: 10px;
@@ -370,34 +342,8 @@ div#end #end {
   padding: 1em;
   margin: 1em 1em 1em 0em;
 }
-/*
-// Guarded Mixin
-.guardedMixin(@backgroundGuardedMixinColor) when (lightness(@backgroundGuardedMixinColor) < 80%)
-{
-	background-color: lighten(@backgroundGuardedMixinColor, 20%);
-	color: lighten(@siteGreyColor, 20%);
-}
-.guardedMixin(@backgroundGuardedMixinColor) when (lightness(@backgroundGuardedMixinColor) >= 80%)
-{
-	background-color: darken(@backgroundGuardedMixinColor, 10%);
-	color: lighten(@siteGreyColor, 80%);
-}
-.guardedMixin(@_)
-{
-	border: 3px solid darken(@siteGreyColor, 80%);
-	border-radius: 0.5em;
-	margin: 1em 1em 1em 0em;
-	padding: 1em;
-	//color: darken(@siteGreyColor, 80%);
-}
-
-#guardedMixin
-{
-	.guardedMixin(@footBanBackgroundColor + #111);
-}
-*/
 #guardedMixin {
-  background-color: #ffc37f;
+  background-color: #ffc077;
   color: #ffffff;
   font-size: 3em;
   border: 3px solid #292929;
@@ -405,14 +351,48 @@ div#end #end {
   margin: 1em 1em 1em 0em;
   padding: 1em;
 }
-#hslDef {
-  background-color: #ff8000;
-  border-style: solid;
-  border-width: 10px;
-  border-color: #cc6600;
-  border-radius: replace("1px", "px", get-unit(24em));
+#looping #div-5 {
+  border: 25px solid black;
+  margin-top: 2em;
   padding: 2em;
-  margin: 1em 1em 1em 0em;
-  color: #b3b3b3;
-  font-size: 1.3em;
+  background-color: #ff99ee;
+  font-family: Verdana;
+  font-size: 2em;
+  border-radius: 1.5em;
+}
+#looping #div-4 {
+  border: 20px solid black;
+  margin-top: 1.8em;
+  padding: 1.8em;
+  background-color: #ff99cc;
+  font-family: Verdana;
+  font-size: 1.8em;
+  border-radius: 1.3em;
+}
+#looping #div-3 {
+  border: 15px solid black;
+  margin-top: 1.6em;
+  padding: 1.6em;
+  background-color: #ff99aa;
+  font-family: Verdana;
+  font-size: 1.6em;
+  border-radius: 1.1em;
+}
+#looping #div-2 {
+  border: 10px solid black;
+  margin-top: 1.4em;
+  padding: 1.4em;
+  background-color: #ff9988;
+  font-family: Verdana;
+  font-size: 1.4em;
+  border-radius: 0.9em;
+}
+#looping #div-1 {
+  border: 5px solid black;
+  margin-top: 1.2em;
+  padding: 1.2em;
+  background-color: #ff9966;
+  font-family: Verdana;
+  font-size: 1.2em;
+  border-radius: 0.7em;
 }

@@ -3,18 +3,8 @@
 <html>
  <head>	
 	<title>inlogregistratie - tutorialsite</title>
-	<?php
-    /* 
-        require("./lessphp/lessc.inc.php");
+	
         
-        $less = new lessc();
-        
-        $less->checkedCompile("css/less-style.less", "css/less-style.css");
-        $less->checkedCompile("css/style.less", "css/style.css"); 
-     */   
-     ?>
-    
-    
 	<link rel="stylesheet/less" type="text/css" href="css/less-style.less">
 	<link rel="stylesheet/less" type="text/css" href="css/php-style.php">
 	<link rel="stylesheet/less" type="text/css" href="css/style.less">
