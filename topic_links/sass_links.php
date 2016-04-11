@@ -1,1 +1,0 @@
-<a href='index.php?content=developer_homepage&topic=sass&page=tutorials/sass/get_started'>SASS Get Started</a>

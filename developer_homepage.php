@@ -35,8 +35,8 @@
 				case "jquery_ui":
 					include("topic_links/jquery_ui_links.php");
 				break;
-				case "sass":
-					include("topic_links/sass_links.php");
+				case "pdo":
+					include("topic_links/pdo_links.php");
 				break;
 				case "less":
 					include("topic_links/less_links.php");
