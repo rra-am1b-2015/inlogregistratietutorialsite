@@ -1,5 +1,5 @@
 <?php     
-    require("./lessphp/lessc.inc.php");    
+    require_once("./lessphp/lessc.inc.php");    
     $less = new lessc();    
     $cssString =  $less->compile("
     //########################################

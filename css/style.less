@@ -1,4 +1,60 @@
-@import url("less-style.less");
+//@import url("less-style.less");
+/* Dit is de dezelfde manier van uitcommentarieren als bij PHP
+ * Je kunt ook de // gebruiken voor een regel uitcommentarieren
+ *
+ */
+ 
+@footBanBackgroundColor: rgb(255, 127, 0); //#EAF3F3;
+@roundedCorners: 24px;
+ 
+ 
+
+@borderThickness: 15px * @scale;
+@borderStyle: solid;
+//@border: @borderThickness @borderStyle @borderColor;
+@borderNextLevel: 20px solid green;
+@radius: .5em * @scale;
+
+@tekstColor: white;
+@parPadding: .5em * @scale		;
+@fontSize: 2em *@scale;
+@scale: 1;
+@width: 60%;
+@marginTop: 1.5em;
+@userrolelinkColor: #65C1CD;
+@siteGreyColor: #F5F5F5;
+@siteBorderColor: rgb(138, 172, 7);
+@backgroundColor: rgb(255, 127, 0);
+
+// Hieronder worden wat mixins gedefinieerd
+
+.commonSettingsHeaderFooter
+{
+	font-size:25px;
+	background-color: @footBanBackgroundColor; //RGB(255,127,0);
+	border: 1px solid @siteBorderColor;
+	color:white;
+	text-align:center;
+	padding:10px;
+	font-weight:bold;
+}
+
+.formStyle
+{
+	border: 0px solid black;
+	border-collapse: collapse;
+	padding:5px;
+}
+
+// mixin met parameters
+.roundedCornersProps (@topLeft, @topRight, @bottomLeft, @bottomRight)
+{
+	border-bottom-left-radius: @bottomLeft;
+	border-bottom-right-radius: @bottomRight;
+	border-top-left-radius: @topLeft;
+	border-top-right-radius: @topRight;
+}
+
 
 *
 {

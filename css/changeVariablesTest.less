@@ -1,0 +1,16 @@
+@changeStyle: @boolRra;
+@kleurtje: @kleur;
+
+.changeStyleP(@change) when ( @change ) 
+{
+    background-color: @kleurtje;
+    border: 1em solid darken(@kleurtje, 20%);
+    color: lighten(@kleurtje, 30%);
+    font-size: @test;
+}
+
+#changeStyleP
+{
+    .changeStyleP(@changeStyle);
+}
+

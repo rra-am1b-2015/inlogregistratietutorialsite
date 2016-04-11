@@ -8,3 +8,4 @@
 <a href='index.php?content=developer_homepage&topic=less&page=tutorials/less/less_loops'>LESS loops</a>
 <a href='index.php?content=developer_homepage&topic=less&page=tutorials/less/less_php_compiler'>LESS php compiler</a>
 <a href='index.php?content=developer_homepage&topic=less&page=tutorials/less/less_php_compileFile'>LESS php compile File</a>
+<a href='index.php?content=developer_homepage&topic=less&page=tutorials/less/less_php_setVariables'>LESS php setVariables</a>
