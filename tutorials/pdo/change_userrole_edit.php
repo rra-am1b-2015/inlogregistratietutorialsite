@@ -27,11 +27,18 @@
         $result1 = $stmt1->fetchAll();
         var_dump($result1);
         //var_dump($bool);
-        //var_dump($result);
+        var_dump($result);
         $userroleString = "";
         for ( $i = 0; $i < sizeof($result1); $i++)
         {
-            $userroleString .= $result1[$i]["userrole"];
+            if ($result1[$i]["userrole"] == $result[0]["userrole"])
+            {
+                $userroleString .= "<option selected>".$result1[$i]["userrole"]."</option>";
+            }
+            else 
+            {
+                $userroleString .= "<option>".$result1[$i]["userrole"]."</option>";
+            }
         }
         
        
@@ -58,7 +65,7 @@
                     }
             echo "<td>
                     <select>
-                        <option>".$userroleString."</option>
+                        ".$userroleString."
                     </select>
                   </td>
              </tr>";
