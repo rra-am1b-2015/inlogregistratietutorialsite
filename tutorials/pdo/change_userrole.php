@@ -46,8 +46,13 @@
                         echo "<td>".$value."</td>";
                     }
             echo "<td>
-                    <a href='index.php?content=developer_homepage&topic=pdo&page=tutorials/pdo/change_userrole_edit&id=".$record['id']."'>
+                    <a href='index.php?content=developer_homepage&topic=pdo&page=tutorials/pdo/change_userrole_edit&action=update&id=".$record['id']."'>
                         <img src='./images/b_edit.png'/>
+                    </a>
+                  </td>
+                  <td>
+                    <a href='index.php?content=developer_homepage&topic=pdo&page=tutorials/pdo/change_userrole_edit&action=delete&id=".$record['id']."'>
+                        <img src='./images/b_drop.png'/>
                     </a>
                   </td>
              </tr>";
