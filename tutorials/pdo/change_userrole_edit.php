@@ -12,9 +12,7 @@
     {
         $conn = new PDO("mysql:host=".$servername.";dbname=".$databasename, $username, $password);
         $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-        //echo "Verbinding met de server is gelukt en database is geselecteerd";
-        //$id = '*';
-        
+               
         $stmt = $conn->prepare("SELECT `id`, `firstname`, `infix`, `lastname`, `userrole` FROM `users` WHERE id=:id");
         $stmt1 = $conn->prepare("SELECT DISTINCT `userrole` FROM `users`");
         
@@ -30,7 +28,11 @@
         var_dump($result1);
         //var_dump($bool);
         //var_dump($result);
-        
+        $userroleString = "";
+        for ( $i = 0; $i < sizeof($result1); $i++)
+        {
+            $userroleString .= $result1[$i]["userrole"];
+        }
         
        
         
@@ -56,7 +58,7 @@
                     }
             echo "<td>
                     <select>
-                        
+                        <option>".$userroleString."</option>
                     </select>
                   </td>
              </tr>";
