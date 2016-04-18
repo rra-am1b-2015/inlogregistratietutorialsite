@@ -31,7 +31,7 @@
 	switch($_SERVER["HTTP_HOST"])
 	{
 		case "localhost":
-			$activation_link = "http://localhost/2015-2016/blok1/am1b/inlogregistratietutorialsite/index.php?content=activation&id=".$id."&pw=".$password_hash."";
+			$activation_link = "http://localhost/am1b/inlogregistratietutorialsite-master/index.php?content=activation&id=".$id."&pw=".$password_hash."";
 			break;
 		case "rra-am1a-2015.esy.es":
 			$activation_link = "http://rra-am1a-2015.esy.es/am1b/index.php?content=activation&id=".$id."&pw=".$password_hash."";

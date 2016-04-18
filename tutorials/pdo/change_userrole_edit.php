@@ -17,7 +17,14 @@
         if ($_GET["action"] == "delete")
         {
             echo "delete"; 
-            exit();
+            
+            $stmt = $conn->prepare("DELETE FROM `users` WHERE `id` = :id");
+            
+            $stmt->bindParam(":id", $_GET["id"]);
+            
+            $stmt->execute();
+            
+            header("location: index.php?content=developer_homepage&topic=pdo&page=tutorials/pdo/change_userrole");
             
         }
         else if ( $_GET["action"] == "update")
